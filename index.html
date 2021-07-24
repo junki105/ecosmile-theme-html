@@ -12,26 +12,31 @@
   <main>
     <section class="l-hero relative">
       <div class="font-shingo-heavy relative z-10">
-        <div class="hero-sm-ttl pb-1 tracking-wider">
-          <div class="truck flex items-center justify-center">
+        <div class="hero-sm-ttl pb-1 tracking-wider sm:text-center">
+          <div class="truck flex items-center sm:items-end justify-center sm:w-100">
             <div class="mr-2"><img class="w-full" src="./images/delivery-truck.png" alt=""></div>
             <p class="text-white"><span class="text-yellow-300">東京・埼玉・神奈川・千葉</span>エリア完全対応</p>
           </div>
-          <div class="telephone flex items-center justify-center">
+          <div class="telephone flex sm:inline-flex items-center justify-center">
             <div class="mr-2"><img class="w-full" src="./images/telephone.png" alt=""></div>
             <p class="text-light-yellow">電話で簡単見積もり</p>
           </div>
         </div>
         <h3 class="hero-text-0 tracking-tighter">粗大ゴミの回収、ゴミ屋敷の掃除</h3>
         <h1 class="hero-text-1 text-red text-shadow" data-text="業界最安値">業界最安値<span class="text-shadow" data-text="で">で</span></h1>
-        <h2 class="hero-text-2 sm:text-[5.9vw] text-green-2 text-shadow"data-text="即日回収">即日回収<span class="text-shadow text-grey" data-text="いたします。">いたします。</span></h2>
-        <div class="hero-btn-group flex mt-3 text-light-yellow">
+        <h2 class="hero-text-2 text-green-2 text-shadow whitespace-nowrap"data-text="即日回収">即日回収<span class="text-shadow text-grey" data-text="いたします。">いたします。</span></h2>
+        <div class="hero-btn-group flex sm:block mt-3 text-light-yellow">
           <div class="hero-btn">最短<span class="font-myriadpro-bold">25</span>分で到着</div>
-          <div class="hero-btn text-white"><span class="font-myriadpro-bold"></span>回目は<span class="">20</span>%割引</div>
+          <div class="hero-btn text-white"><span class="font-myriadpro-bold">2</span>回目は<span class="font-myriadpro-bold">20</span>%割引</div>
           <div class="hero-btn">各種カード支払い<span class="font-myriadpro-bold">OK</span></div>
         </div>
       </div>
-      <div class="hero-img absolute bottom-0 right-0 sm:w-[34.8vw]"><img class="w-full" src="./images/hero-img.png" alt=""></div>
+      <div class="hero-img absolute bottom-0 right-0">
+        <picture>
+          <source media="(max-width: 639px)" srcset="./images/hero-img-sp.png" sizes="">
+          <img class="w-full" src="./images/hero-img.png" alt="">
+        </picture>
+      </div>
     </section>
   </main>
 </body>

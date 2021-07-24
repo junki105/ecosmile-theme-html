@@ -43,6 +43,47 @@
   padding: 3.1vw 9.1vw 3.2vw 9.1vw;
 }
 
+.hero-sm-ttl {
+  @apply flex justify-between items-center font-shingo-heavy;
+  background-size: 100% 100%;
+  background-image: url(../images/hero-sm-ttl-bg.png);
+  width: 50.37vw;
+  height: 3.18vw;
+  padding: 0 1.4vw;
+}
+
+.truck div {
+  width: 2.35vw;
+}
+.truck p {
+  font-size: 1.33vw;
+}
+.telephone div {
+  width: 1.63vw;
+}
+.telephone p {
+  font-size: 1.33vw;
+}
+
+.hero-text-1 span {
+  @apply text-grey;
+  font-size: 6.67vw;
+}
+
+.hero-text-0 {
+  font-size: 3.48vw;
+}
+
+.hero-text-1 {
+  font-size: 8.88vw;
+  margin-top: -2vw;
+}
+
+.hero-text-2 {
+  font-size: 5.9vw;
+  margin-top: -3vw;
+}
+
 .text-shadow {
   @apply relative;
   --stroke-color: white;
@@ -57,11 +98,6 @@
     top: 0;
     left: 0;
     text-shadow: calc(var(--stroke-width) * 1) calc(var(--stroke-width) * 0) 0 var(--stroke-color), calc(var(--stroke-width) * 0.9239) calc(var(--stroke-width) * 0.3827) 0 var(--stroke-color), calc(var(--stroke-width) * 0.7071) calc(var(--stroke-width) * 0.7071) 0 var(--stroke-color), calc(var(--stroke-width) * 0.3827) calc(var(--stroke-width) * 0.9239) 0 var(--stroke-color), calc(var(--stroke-width) * 0) calc(var(--stroke-width) * 1) 0 var(--stroke-color), calc(var(--stroke-width) * -0.3827) calc(var(--stroke-width) * 0.9239) 0 var(--stroke-color), calc(var(--stroke-width) * -0.7071) calc(var(--stroke-width) * 0.7071) 0 var(--stroke-color), calc(var(--stroke-width) * -0.9239) calc(var(--stroke-width) * 0.3827) 0 var(--stroke-color), calc(var(--stroke-width) * -1) calc(var(--stroke-width) * 0) 0 var(--stroke-color), calc(var(--stroke-width) * -0.9239) calc(var(--stroke-width) * -0.3827) 0 var(--stroke-color), calc(var(--stroke-width) * -0.7071) calc(var(--stroke-width) * -0.7071) 0 var(--stroke-color), calc(var(--stroke-width) * -0.3827) calc(var(--stroke-width) * -0.9239) 0 var(--stroke-color), calc(var(--stroke-width) * 0) calc(var(--stroke-width) * -1) 0 var(--stroke-color), calc(var(--stroke-width) * 0.3827) calc(var(--stroke-width) * -0.9239) 0 var(--stroke-color), calc(var(--stroke-width) * 0.7071) calc(var(--stroke-width) * -0.7071) 0 var(--stroke-color), calc(var(--stroke-width) * 0.9239) calc(var(--stroke-width) * -0.3827) 0 var(--stroke-color), 0 var(--stroke-black) 6px var(--stroke-color01);
-}
-
-.hero-text-1 span {
-  @apply text-grey;
-  font-size: 6.67vw;
 }
 
 .hero-btn {
@@ -85,17 +121,6 @@
   background-image: url(../images/hero-btn-bg-3.png);
 }
 
-.hero-text-0 {
-  font-size: 3.48vw;
-}
-.hero-text-1 {
-  font-size: 8.88vw;
-  margin-top: -2vw;
-}
-.hero-text-2 {
-  font-size: 5.9vw;
-  margin-top: -3vw;
-}
 .hero-btn-group {
   font-size: 1.85vw;
 }
@@ -108,24 +133,99 @@
   width: 34.8vw;
 }
 
-.hero-sm-ttl {
-  @apply flex justify-between items-center font-shingo-heavy;
-  background-size: 100% 100%;
-  background-image: url(../images/hero-sm-ttl-bg.png);
-  width: 50.37vw;
-  height: 3.18vw;
-  padding: 0 1.4vw;
-}
 
-.truck div {
-  width: 2.35vw;
-}
-.truck p {
-  font-size: 1.33vw;
-}
-.telephone div {
-  width: 1.63vw;
-}
-.telephone p {
-  font-size: 1.33vw;
+@media (max-width: 639px) {
+
+  .l-hero {
+    background-image: url(../images/hero-bg-sp.png);
+    padding: 3.9vw 3.125vw 4vw 3.125vw;
+  }
+  
+  .hero-sm-ttl {
+    @apply block;
+    background-image: unset;
+    width: unset;
+    height: unset;
+    padding: 0;
+  }
+  
+  .truck {
+    background-color: #3474dd;
+    border-radius: 50px;
+    padding: .7vw 0 1.4vw 0;
+  }
+
+  .truck div {
+    width: 5.63vw;
+    padding-bottom: 0.2vw;
+  }
+
+  .truck p {
+    font-size: 3.9vw;
+  }
+
+  .telephone {
+    background-color: #0b35c0;
+    padding: .6vw 6vw 1.3vw 6vw;
+    border-radius: 50px;
+    margin-top: 1vw;
+  }
+
+  .telephone div {
+    width: 4.7vw;
+  }
+
+  .telephone p {
+    font-size: 4.37vw;
+  }
+    
+  .hero-text-0 {
+    font-size: 5.47vw;
+    margin-top: 2vw;
+  }
+  
+  .hero-text-1 {
+    font-size: 15.6vw;
+    margin-top: -4vw;
+  }
+
+  .hero-text-1 span {
+    font-size: 10vw;
+  }
+  
+  .hero-text-2 {
+    font-size: 9.5vw;
+    margin-top: -3vw;
+  }
+  
+  .text-shadow {
+    --stroke-width: 4px;
+    --stroke-black: 3px;
+  }
+  
+  .hero-btn {
+    width: 48.8vw!important;
+    height: 12.9vw;
+  }
+
+  .hero-btn-group {
+    font-size: 5vw;
+  }
+    
+  .hero-btn span {
+    font-size: 7.5vw;
+  }
+
+  .hero-btn:last-child {
+    font-size: 4.3vw;
+  }
+
+  .hero-btn:last-child span {
+    font-size: 5.6vw!important;
+  }
+  
+  .hero-img {
+    width: 53.6vw;
+  }
+  
 }
