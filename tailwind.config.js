@@ -32,6 +32,7 @@ module.exports = {
         'shingo-medium': ['shingo-medium'],
         'shingo-regular': ['shingo-regular'],
         'myriadpro-bold': ['myriadpro-bold'],
+        'genjyuu-bold': ['genjyuu-bold'],
       },
       textColor: {
         'green': '#3d8900',

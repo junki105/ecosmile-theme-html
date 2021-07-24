@@ -611,6 +611,12 @@ video {
   src: url('../fonts/MYRIADPRO-BOLD.otf');
 }
 
+@font-face {
+  font-family: 'genjyuu-bold';
+
+  src: url('../fonts/Gen Jyuu Gothic Monospace Bold.ttf');
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -22369,6 +22375,10 @@ video {
   font-family: myriadpro-bold;
 }
 
+.font-genjyuu-bold {
+  font-family: genjyuu-bold;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -31742,6 +31752,70 @@ video {
   .hero-img {
     width: 53.6vw;
   }
+}
+
+.content {
+  max-width: 1170px;
+}
+
+.l-main {
+  width: 900px;
+}
+
+/* aside  */
+
+.l-aside {
+  width: 240px;
+}
+
+.payment {
+  border-top-color: #7991e0;
+}
+
+.payment h1 {
+  font-size: 18px;
+}
+
+.payment p {
+  color: #002088;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.period {
+  background-image: url(../images/period-bg.png);
+  background-size: 100% 100%;
+  height: 231px;
+}
+
+.period h3 {
+  font-size: 64px;
+  color: #d80100;
+  line-height: 1;
+}
+
+.period h3 span {
+  font-size: 45px;
+}
+
+.period h4 {
+  font-size: 37px;
+  color: #d80100;
+  line-height: 1;
+}
+
+.period h5 span {
+  font-size: 15px;
+  color: #008900;
+  line-height: 1;
+  --stroke-width: 2px!important;
+  --stroke-black: 1px!important;
+}
+
+.p-contact p {
+  font-family: 'Yu Gothic';
+  font-size: 15px;
+  line-height: 20px;
 }
 
 @media (max-width: 1535px) {
@@ -53435,6 +53509,10 @@ video {
 
   .\32xl\:font-myriadpro-bold {
     font-family: myriadpro-bold;
+  }
+
+  .\32xl\:font-genjyuu-bold {
+    font-family: genjyuu-bold;
   }
 
   .\32xl\:text-xs {
@@ -84292,6 +84370,10 @@ video {
     font-family: myriadpro-bold;
   }
 
+  .xl\:font-genjyuu-bold {
+    font-family: genjyuu-bold;
+  }
+
   .xl\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -115145,6 +115227,10 @@ video {
 
   .lg\:font-myriadpro-bold {
     font-family: myriadpro-bold;
+  }
+
+  .lg\:font-genjyuu-bold {
+    font-family: genjyuu-bold;
   }
 
   .lg\:text-xs {
@@ -146002,6 +146088,10 @@ video {
     font-family: myriadpro-bold;
   }
 
+  .md\:font-genjyuu-bold {
+    font-family: genjyuu-bold;
+  }
+
   .md\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -176857,6 +176947,10 @@ video {
     font-family: myriadpro-bold;
   }
 
+  .sm\:font-genjyuu-bold {
+    font-family: genjyuu-bold;
+  }
+
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -186018,3 +186112,7 @@ video {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+
+
+
+

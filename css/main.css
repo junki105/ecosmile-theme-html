@@ -34,6 +34,10 @@
   font-family: 'myriadpro-bold';
   src: url('../fonts/MYRIADPRO-BOLD.otf');
 }
+@font-face {
+  font-family: 'genjyuu-bold';
+  src: url('../fonts/Gen Jyuu Gothic Monospace Bold.ttf');
+}
 
 @tailwind utilities;
 
@@ -229,3 +233,71 @@
   }
   
 }
+
+.content {
+  max-width: 1170px;
+}
+
+.l-main {
+  width: 900px;
+}
+
+/* aside begin */
+
+.l-aside {
+  width: 240px;
+}
+
+.payment {
+  border-top-color: #7991e0;
+}
+
+.payment h1 {
+  font-size: 18px;
+}
+
+.payment p {
+  color: #002088;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.period {
+  background-image: url(../images/period-bg.png);
+  background-size: 100% 100%;
+  height: 231px;
+}
+
+.period h3 {
+  font-size: 64px;
+  color: #d80100;
+  line-height: 1;
+}
+
+.period h3 span {
+  font-size: 45px;
+}
+
+.period h4 {
+  font-size: 37px;
+  color: #d80100;
+  line-height: 1;
+}
+
+.period h5 span {
+  font-size: 15px;
+  color: #008900;
+  line-height: 1;
+  --stroke-width: 2px!important;
+  --stroke-black: 1px!important;
+}
+
+.p-contact p {
+  font-family: 'Yu Gothic';
+  font-size: 15px;
+  line-height: 20px;
+}
+
+/* aside end */
+
+
