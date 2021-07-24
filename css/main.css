@@ -1,0 +1,131 @@
+@tailwind base;
+
+@tailwind components;
+
+@font-face {
+  font-family: 'shingo-debold';
+  src: url('../fonts/AOTFShinGoProDeBold.otf');
+}
+@font-face {
+  font-family: 'shingo-heavy';
+  src: url('../fonts/AOTFShinGoProHeavy.otf');
+}
+@font-face {
+  font-family: 'shingo-bold';
+  src: url('../fonts/AOTFShinGoProBold.otf');
+}
+@font-face {
+  font-family: 'shingo-exlight';
+  src: url('../fonts/AOTFShinGoProExLight.otf');
+}
+@font-face {
+  font-family: 'shingo-light';
+  src: url('../fonts/AOTFShinGoProLight.otf');
+}
+@font-face {
+  font-family: 'shingo-medium';
+  src: url('../fonts/AOTFShinGoProMedium.otf');
+}
+@font-face {
+  font-family: 'shingo-regular';
+  src: url('../fonts/AOTFShinGoProRegular.otf');
+}
+@font-face {
+  font-family: 'myriadpro-bold';
+  src: url('../fonts/MYRIADPRO-BOLD.otf');
+}
+
+@tailwind utilities;
+
+.l-hero {
+  background-image: url(../images/hero-bg.png);
+  @apply bg-cover;
+  padding: 3.1vw 9.1vw 3.2vw 9.1vw;
+}
+
+.text-shadow {
+  @apply relative;
+  --stroke-color: white;
+  --stroke-width: 6px;
+  --stroke-black: 4px;
+  --stroke-color01: black;
+}
+.text-shadow::after {
+    content: attr(data-text);
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    text-shadow: calc(var(--stroke-width) * 1) calc(var(--stroke-width) * 0) 0 var(--stroke-color), calc(var(--stroke-width) * 0.9239) calc(var(--stroke-width) * 0.3827) 0 var(--stroke-color), calc(var(--stroke-width) * 0.7071) calc(var(--stroke-width) * 0.7071) 0 var(--stroke-color), calc(var(--stroke-width) * 0.3827) calc(var(--stroke-width) * 0.9239) 0 var(--stroke-color), calc(var(--stroke-width) * 0) calc(var(--stroke-width) * 1) 0 var(--stroke-color), calc(var(--stroke-width) * -0.3827) calc(var(--stroke-width) * 0.9239) 0 var(--stroke-color), calc(var(--stroke-width) * -0.7071) calc(var(--stroke-width) * 0.7071) 0 var(--stroke-color), calc(var(--stroke-width) * -0.9239) calc(var(--stroke-width) * 0.3827) 0 var(--stroke-color), calc(var(--stroke-width) * -1) calc(var(--stroke-width) * 0) 0 var(--stroke-color), calc(var(--stroke-width) * -0.9239) calc(var(--stroke-width) * -0.3827) 0 var(--stroke-color), calc(var(--stroke-width) * -0.7071) calc(var(--stroke-width) * -0.7071) 0 var(--stroke-color), calc(var(--stroke-width) * -0.3827) calc(var(--stroke-width) * -0.9239) 0 var(--stroke-color), calc(var(--stroke-width) * 0) calc(var(--stroke-width) * -1) 0 var(--stroke-color), calc(var(--stroke-width) * 0.3827) calc(var(--stroke-width) * -0.9239) 0 var(--stroke-color), calc(var(--stroke-width) * 0.7071) calc(var(--stroke-width) * -0.7071) 0 var(--stroke-color), calc(var(--stroke-width) * 0.9239) calc(var(--stroke-width) * -0.3827) 0 var(--stroke-color), 0 var(--stroke-black) 6px var(--stroke-color01);
+}
+
+.hero-text-1 span {
+  @apply text-grey;
+  font-size: 6.67vw;
+}
+
+.hero-btn {
+  @apply flex justify-center items-center pb-1;
+  background-size: 100% 100%;
+  height: 5.48vw;
+}
+
+.hero-btn:first-child {
+  width: 18.8vw;
+  background-image: url(../images/hero-btn-bg-1.png);
+}
+
+.hero-btn:nth-child(2) {
+  width: 19.5vw;
+  background-image: url(../images/hero-btn-bg-2.png);
+}
+
+.hero-btn:last-child {
+  width: 21.7vw;
+  background-image: url(../images/hero-btn-bg-3.png);
+}
+
+.hero-text-0 {
+  font-size: 3.48vw;
+}
+.hero-text-1 {
+  font-size: 8.88vw;
+  margin-top: -2vw;
+}
+.hero-text-2 {
+  font-size: 5.9vw;
+  margin-top: -3vw;
+}
+.hero-btn-group {
+  font-size: 1.85vw;
+}
+  
+.hero-btn span {
+  font-size: 2.9vw;
+}
+
+.hero-img {
+  width: 34.8vw;
+}
+
+.hero-sm-ttl {
+  @apply flex justify-between items-center font-shingo-heavy;
+  background-size: 100% 100%;
+  background-image: url(../images/hero-sm-ttl-bg.png);
+  width: 50.37vw;
+  height: 3.18vw;
+  padding: 0 1.4vw;
+}
+
+.truck div {
+  width: 2.35vw;
+}
+.truck p {
+  font-size: 1.33vw;
+}
+.telephone div {
+  width: 1.63vw;
+}
+.telephone p {
+  font-size: 1.33vw;
+}
