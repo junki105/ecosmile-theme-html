@@ -82,9 +82,11 @@
 .truck p {
   font-size: 1.33vw;
 }
+
 .telephone div {
   width: 1.63vw;
 }
+
 .telephone p {
   font-size: 1.33vw;
 }
@@ -158,7 +160,7 @@
 }
 
 
-@screen sm {
+@screen md {
 
   .l-hero {
     background-image: url(../images/hero-bg-sp.png);
@@ -464,4 +466,303 @@
     font-size: 52rem;
   }
 }
+
+/* intro end */
+
+/* service begin */
+
+.l-service {
+  background-color: #ddf2ff;
+  padding-bottom: 30px;
+}
+
+.eco-ttl {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 56% 80%, 50% 100%, 44% 80%, 0% 80%);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 56% 80%, 50% 100%, 44% 80%, 0% 80%);
+  background-color: #3474dd;
+  padding-top: 10px;
+  padding-bottom: 62px;
+}
+
+.eco-ttl-top {
+  font-size: 55px;
+}
+
+.eco-ttl-top .pc-green {
+  color: #b1ff36;
+}
+
+.eco-ttl-bottom {
+  font-size: 24px;
+  color: #fffd57;
+}
+
+.eco-ttl-bottom img:first-child {
+  margin-right: 10px;
+}
+
+.eco-ttl-bottom img:last-child {
+  margin-left: 10px;
+}
+
+.service-article h2 {
+  font-size: 30px;
+  color: #080b74;
+  margin-top: 10px;
+}
+
+.service-article h2 span {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.service-article div {
+  grid-template-columns: auto auto;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.service-article div article h3 {
+  width: 400px;
+  height: 190px;
+  background-size: 100% 100%;
+  font-size: 30px;
+  padding-right: 11px;
+}
+
+.service-article div article p {
+  font-size: 16px;
+  font-family: 'Yu Gothic';
+  margin-top: 8px;
+}
+
+.service-article div article {
+  margin-bottom: 15px;
+}
+
+.service-article div article h3 span {
+  font-size: 28px;
+}
+
+.service-article div article:nth-child(even) {
+  margin-left: 15px;
+}
+
+
+.service-article div article:first-child h3 {
+  background-image: url(../images/service-01.png);
+}
+
+
+.service-article div article:nth-child(2) h3 {
+  background-image: url(../images/service-02.png);
+  padding-right: 27px;
+}
+
+.service-article div article:nth-child(3) h3 {
+  background-image: url(../images/service-03.png);
+}
+
+
+.service-article div article:last-child h3 {
+  background-image: url(../images/service-04.png);
+  padding-right: 35px;
+}
+
+.service-article a p {
+  background-image: url(../images/btn-service.png);
+  background-size: 100% 100%;
+  width: 210px;
+  height: 45px;
+  font-size: 18px;
+}
+
+@screen md {
+    
+  .l-service {
+    padding-bottom: 30rem;
+  }
+
+  .eco-ttl {
+    padding-top: 10rem;
+    padding-bottom: 62rem;
+  }
+
+  .eco-ttl-top {
+    font-size: 55rem;
+  }
+
+  .eco-ttl-bottom {
+    font-size: 24rem;
+  }
+
+  .eco-ttl-bottom img:first-child {
+    margin-right: 10rem;
+  }
+
+  .eco-ttl-bottom img:last-child {
+    margin-left: 10rem;
+  }
+
+  .service-article h2 {
+    font-size: 30rem;
+    margin-top: 10rem;
+  }
+
+  .service-article h2 span {
+  }
+
+  .service-article div {
+    margin-top: 10rem;
+    padding-left: 20rem;
+  }
+
+  .service-article div article h3 {
+    width: 400rem;
+    height: 190rem;
+    font-size: 30rem;
+    padding-right: 11rem;
+  }
+
+  .service-article div article p {
+    font-size: 16rem;
+    margin-top: 8rem;
+  }
+
+  .service-article div article {
+    margin-bottom: 15rem;
+  }
+
+  .service-article div article h3 span {
+    font-size: 28rem;
+  }
+
+  .service-article div article:nth-child(even) {
+    margin-left: 15rem;
+  }
+
+  .service-article div article:nth-child(2) h3 {
+    padding-right: 27rem;
+  }
+
+  .service-article div article:nth-child(3) h3 {
+  }
+
+
+  .service-article div article:last-child h3 {
+    padding-right: 35rem;
+  }
+
+  .service-article a p {
+    width: 210rem;
+    height: 45rem;
+    font-size: 18rem;
+  }
+}
+
+@screen sm {
+    
+  .l-service {
+    padding-bottom: 40rem;
+  }
+
+  .eco-ttl {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 87%, 58% 87%, 50% 100%, 42% 87%, 0% 87%);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 87%, 58% 87%, 50% 100%, 42% 87%, 0% 87%);
+    padding-top: 7rem;
+    padding-bottom: 50rem;
+  }
+
+  .eco-ttl-top {
+    font-size: 55rem;
+  }
+
+  .eco-ttl-top .pc-green {
+    color: #b1ff36;
+    font-size: 65rem;
+  }
+
+  .eco-ttl-top .sp-eco {
+    font-size: 75rem;
+  }
+
+  .eco-ttl-bottom {
+    font-size: 24rem;
+    color: #fffd57;
+  }
+
+  .service-article h2 {
+    font-size: 35rem;
+    margin-top: 10rem;
+  }
+
+  .service-article h2 span {
+    font-size: 20rem;
+    margin-left: 10rem;
+  }
+
+  .service-article div {
+    grid-template-columns: auto auto;
+    margin-top: 20rem;
+    padding-left: 0;
+  }
+
+  .service-article div article h3 {
+    width: 280rem;
+    height: 280rem;
+    font-size: 34rem;
+    padding-right: 0;
+    padding-bottom: 16rem;
+  }
+
+  .service-article div article p {
+    font-size: 24rem;
+    margin-top: 8rem;
+  }
+
+  .service-article div article {
+    margin-bottom: 15px;
+    width: 280rem;
+  }
+
+  .service-article div article h3 span {
+    font-size: 34rem;
+    line-height: 1.25;
+  }
+
+  .service-article div article:nth-child(even) {
+    margin-left: 0;
+  }
+
+
+  .service-article div article:first-child h3 {
+    background-image: url(../images/service-sp-01.png);
+  }
+
+
+  .service-article div article:nth-child(2) h3 {
+    background-image: url(../images/service-sp-02.png);
+    padding-right: 0;
+  }
+
+  .service-article div article:nth-child(3) h3 {
+    background-image: url(../images/service-sp-03.png);
+  }
+
+
+  .service-article div article:last-child h3 {
+    background-image: url(../images/service-sp-04.png);
+    padding-right: 0;
+  }
+
+  .service-article a p {
+    background-image: url(../images/btn-service-sp.png);
+    width: 250rem;
+    height: 60rem;
+    font-size: 24rem;
+  }
+}
+
+
+/* service end */
 
