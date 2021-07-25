@@ -617,6 +617,12 @@ video {
   src: url('../fonts/Gen Jyuu Gothic Monospace Bold.ttf');
 }
 
+@font-face {
+  font-family: 'kozuka-bold';
+
+  src: url('../fonts/KozGoPro-Bold.otf');
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -22379,6 +22385,10 @@ video {
   font-family: genjyuu-bold;
 }
 
+.font-kozuka-bold {
+  font-family: kozuka-bold;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -31553,6 +31563,18 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media (max-width: 899px) {
+  html {
+    font-size: calc(100vw / 900);
+  }
+}
+
+@media (max-width: 639px) {
+  html {
+    font-size: calc(100vw / 640);
+  }
+}
+
 .l-hero {
   background-image: url(../images/hero-bg.png);
   background-size: cover;
@@ -31683,6 +31705,7 @@ video {
   .truck div {
     width: 5.63vw;
     padding-bottom: 0.2vw;
+    margin-right: 10rem;
   }
 
   .truck p {
@@ -31698,6 +31721,7 @@ video {
 
   .telephone div {
     width: 4.7vw;
+    margin-right: 10rem;
   }
 
   .telephone p {
@@ -31762,7 +31786,7 @@ video {
   width: 900px;
 }
 
-/* aside  */
+/* aside begin */
 
 .l-aside {
   width: 240px;
@@ -31816,6 +31840,139 @@ video {
   font-family: 'Yu Gothic';
   font-size: 15px;
   line-height: 20px;
+}
+
+/* aside end */
+
+/* ----- main begin ------ */
+
+/* sp intro begin */
+
+@media (max-width: 639px) {
+  .content {
+    margin-top: 15rem;
+  }
+
+  .sp-intro {
+  }
+
+  .sp-intro h1 {
+    font-size: 24rem;
+  }
+
+  .sp-intro h1 img {
+    width: 20rem;
+    margin-right: 10rem;
+  }
+
+  .fukidasi {
+    background-image: url(../images/fukidasi-bg.png);
+    background-size: 100% 100%;
+    margin-top: 15rem;
+    height: 163rem;
+  }
+
+  .fukidasi h2 {
+    font-size: 28rem;
+    margin-bottom: -3rem;
+  }
+
+  .fukidasi-period {
+    padding-left: 20rem;
+  }
+
+  .fukidasi-period div:first-child {
+    font-size: 35rem;
+  }
+
+  .fukidasi-period div:last-child {
+    font-size: 34rem;
+  }
+
+  .fukidasi-price {
+    color: #e70100;
+    margin-left: 24rem;
+  }
+
+  .fukidasi-price span:first-child {
+    font-size: 85rem;
+    --stroke-color: #fff36a!important;
+    --stroke-width: 2px!important;
+    --stroke-black: 1px!important;
+  }
+
+  .fukidasi-price span:nth-child(2) {
+    font-size: 45rem;
+    --stroke-color: #fff36a!important;
+    --stroke-width: 2px!important;
+    --stroke-black: 1px!important;
+  }
+
+  .fukidasi-price span:last-child {
+    font-size: 74rem;
+    margin-right: 30rem;
+    --stroke-color: #fff36a!important;
+    --stroke-width: 2px!important;
+    --stroke-black: 1px!important;
+  }
+}
+
+/* sp intro end */
+
+/* intro begin */
+
+.l-intro h1 {
+  font-size: 26px;
+}
+
+.l-intro h2 {
+  font-size: 42px;
+}
+
+.l-intro h2 span:nth-child(2) {
+  font-size: 56px;
+  color: #d01919;
+}
+
+@media (max-width: 899px) {
+  .l-intro h1 {
+    font-size: 26rem;
+  }
+
+  .l-intro h2 {
+    font-size: 42rem;
+  }
+
+  .l-intro h2 span:nth-child(2) {
+    font-size: 56rem;
+    color: #d01919;
+  }
+}
+
+@media (max-width: 639px) {
+  .l-intro {
+    padding-top: 20rem;
+  }
+
+  .l-intro h1 {
+    font-size: 30rem;
+  }
+
+  .l-intro h2 {
+    font-size: 60rem;
+    line-height: 1.1;
+    margin-top: 15rem;
+    margin-bottom: 50rem;
+  }
+
+  .l-intro h2 span:nth-child(2) {
+    font-size: 70rem;
+    color: #d01919;
+  }
+
+  .l-intro h2 span:last-child {
+    font-size: 52rem;
+  }
 }
 
 @media (max-width: 1535px) {
@@ -53513,6 +53670,10 @@ video {
 
   .\32xl\:font-genjyuu-bold {
     font-family: genjyuu-bold;
+  }
+
+  .\32xl\:font-kozuka-bold {
+    font-family: kozuka-bold;
   }
 
   .\32xl\:text-xs {
@@ -84374,6 +84535,10 @@ video {
     font-family: genjyuu-bold;
   }
 
+  .xl\:font-kozuka-bold {
+    font-family: kozuka-bold;
+  }
+
   .xl\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -115233,6 +115398,10 @@ video {
     font-family: genjyuu-bold;
   }
 
+  .lg\:font-kozuka-bold {
+    font-family: kozuka-bold;
+  }
+
   .lg\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -124395,7 +124564,7 @@ video {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 899px) {
   .md\:sr-only {
     position: absolute;
     width: 1px;
@@ -146090,6 +146259,10 @@ video {
 
   .md\:font-genjyuu-bold {
     font-family: genjyuu-bold;
+  }
+
+  .md\:font-kozuka-bold {
+    font-family: kozuka-bold;
   }
 
   .md\:text-xs {
@@ -176951,6 +177124,10 @@ video {
     font-family: genjyuu-bold;
   }
 
+  .sm\:font-kozuka-bold {
+    font-family: kozuka-bold;
+  }
+
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -186112,7 +186289,4 @@ video {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-
-
-
 

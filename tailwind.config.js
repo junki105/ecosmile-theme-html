@@ -11,13 +11,13 @@ module.exports = {
       // => @media (max-width: 1535px) { ... }
   
       'xl': {'max': '1169px'},
-      // => @media (max-width: 1279px) { ... }
+      // => @media (max-width: 1169px) { ... }
   
       'lg': {'max': '1049px'},
-      // => @media (max-width: 1023px) { ... }
+      // => @media (max-width: 1049px) { ... }
   
-      'md': {'max': '767px'},
-      // => @media (max-width: 767px) { ... }
+      'md': {'max': '899px'},
+      // => @media (max-width: 899px) { ... }
   
       'sm': {'max': '639px'},
       // => @media (max-width: 639px) { ... }
@@ -33,6 +33,7 @@ module.exports = {
         'shingo-regular': ['shingo-regular'],
         'myriadpro-bold': ['myriadpro-bold'],
         'genjyuu-bold': ['genjyuu-bold'],
+        'kozuka-bold': ['kozuka-bold'],
       },
       textColor: {
         'green': '#3d8900',
