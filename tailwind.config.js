@@ -32,6 +32,7 @@ module.exports = {
         'shingo-medium': ['shingo-medium'],
         'shingo-regular': ['shingo-regular'],
         'myriadpro-bold': ['myriadpro-bold'],
+        'myriadpro-semibold': ['myriadpro-semibold'],
         'genjyuu-bold': ['genjyuu-bold'],
         'kozuka-bold': ['kozuka-bold'],
       },

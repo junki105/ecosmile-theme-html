@@ -612,6 +612,12 @@ video {
 }
 
 @font-face {
+  font-family: 'myriadpro-semibold';
+
+  src: url('../fonts/MYRIADPRO-SEMIBOLD.otf');
+}
+
+@font-face {
   font-family: 'genjyuu-bold';
 
   src: url('../fonts/Gen Jyuu Gothic Monospace Bold.ttf');
@@ -22381,6 +22387,10 @@ video {
   font-family: myriadpro-bold;
 }
 
+.font-myriadpro-semibold {
+  font-family: myriadpro-semibold;
+}
+
 .font-genjyuu-bold {
   font-family: genjyuu-bold;
 }
@@ -32263,6 +32273,216 @@ video {
 }
 
 /* service end */
+
+/* contact begin */
+
+.l-contact {
+  padding: 40px 0;
+}
+
+.l-contact address {
+  background-color: #f3f3f3;
+  padding: 20px;
+}
+
+.l-contact address a h1 {
+  font-size: 21px;
+  color: #292929;
+}
+
+.tel-num {
+  margin: 8px 0;
+}
+
+.tel-num span {
+  font-size: 50px;
+}
+
+.tel-num img {
+  width: 56px;
+  margin-right: 10px;
+}
+
+.contact-time {
+  color: #333333;
+}
+
+.contact-time div:first-child {
+  font-size: 18px;
+}
+
+.contact-time div:first-child span {
+  font-size: 24px;
+}
+
+.contact-time div:last-child {
+  background-color: #0e99f1;
+  width: 100px;
+  height: 28px;
+  font-size: 18px;
+  padding-top: 4px;
+  margin-left: 5px;
+}
+
+.contact-condition-year {
+  margin-top: 30px;
+}
+
+.contact-condition-year img {
+  width: 53px;
+  height: 36px;
+}
+
+.contact-free  {
+  font-size: 33px;
+}
+
+.contact-free span {
+  color: #ea0f0d;
+}
+
+.contact-365 {
+  font-size: 35px;
+  width: 300px;
+  height: 56px;
+  padding-bottom: 4px;
+  background-color: #0e99f1;
+}
+
+.contact-365 span {
+  font-size: 50px;
+}
+
+.contact-condition-time {
+  margin-top: 10px;
+}
+
+.contact-area {
+  font-size: 32px;
+  color: #814516;
+}
+
+.contact-area span {
+  color: #000;
+}
+
+.contact-25 {
+  font-size: 40px;
+  width: 300px;
+  height: 56px;
+  padding-bottom: 4px;
+  background-color: #ff7e00;
+}
+
+.contact-25 span:first-child {
+  font-size: 20px;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  margin-top: 6px;
+  margin-right: 6px;
+}
+
+.contact-25 span:nth-child(2) {
+  font-size: 53px;
+}
+
+@media (max-width: 899px) {
+  .l-contact {
+    padding: 40rem 0;
+  }
+
+  .l-contact address {
+    padding: 20rem;
+  }
+
+  .l-contact address a h1 {
+    font-size: 21rem;
+  }
+
+  .tel-num {
+    margin: 8rem 0;
+  }
+
+  .tel-num span {
+    font-size: 50rem;
+  }
+
+  .tel-num img {
+    width: 56rem;
+    margin-right: 10rem;
+  }
+
+  .contact-time div:first-child {
+    font-size: 18rem;
+  }
+
+  .contact-time div:first-child span {
+    font-size: 24rem;
+  }
+
+  .contact-time div:last-child {
+    width: 100rem;
+    height: 28rem;
+    font-size: 18rem;
+    padding-top: 4rem;
+    margin-left: 5rem;
+  }
+
+  .p-contact-mail, .p-contact-line img {
+    width: 240rem;
+  }
+
+  .contact-condition-year {
+    margin-top: 30rem;
+  }
+
+  .contact-condition-year img {
+    width: 53rem;
+    height: 36rem;
+  }
+
+  .contact-free  {
+    font-size: 33rem;
+  }
+
+  .contact-365 {
+    font-size: 35rem;
+    width: 300rem;
+    height: 56rem;
+    padding-bottom: 4rem;
+  }
+
+  .contact-365 span {
+    font-size: 50rem;
+  }
+
+  .contact-condition-time {
+    margin-top: 10rem;
+  }
+
+  .contact-area {
+    font-size: 32rem;
+  }
+
+  .contact-25 {
+    font-size: 40rem;
+    width: 300rem;
+    height: 56rem;
+    padding-bottom: 4rem;
+  }
+
+  .contact-25 span:first-child {
+    font-size: 20rem;
+    margin-top: 6rem;
+    margin-right: 6rem;
+  }
+
+  .contact-25 span:nth-child(2) {
+    font-size: 53rem;
+  }
+}
+
+/* contact end */
 
 @media (max-width: 1535px) {
   .\32xl\:sr-only {
@@ -53955,6 +54175,10 @@ video {
 
   .\32xl\:font-myriadpro-bold {
     font-family: myriadpro-bold;
+  }
+
+  .\32xl\:font-myriadpro-semibold {
+    font-family: myriadpro-semibold;
   }
 
   .\32xl\:font-genjyuu-bold {
@@ -84820,6 +85044,10 @@ video {
     font-family: myriadpro-bold;
   }
 
+  .xl\:font-myriadpro-semibold {
+    font-family: myriadpro-semibold;
+  }
+
   .xl\:font-genjyuu-bold {
     font-family: genjyuu-bold;
   }
@@ -115681,6 +115909,10 @@ video {
 
   .lg\:font-myriadpro-bold {
     font-family: myriadpro-bold;
+  }
+
+  .lg\:font-myriadpro-semibold {
+    font-family: myriadpro-semibold;
   }
 
   .lg\:font-genjyuu-bold {
@@ -146546,6 +146778,10 @@ video {
     font-family: myriadpro-bold;
   }
 
+  .md\:font-myriadpro-semibold {
+    font-family: myriadpro-semibold;
+  }
+
   .md\:font-genjyuu-bold {
     font-family: genjyuu-bold;
   }
@@ -177407,6 +177643,10 @@ video {
 
   .sm\:font-myriadpro-bold {
     font-family: myriadpro-bold;
+  }
+
+  .sm\:font-myriadpro-semibold {
+    font-family: myriadpro-semibold;
   }
 
   .sm\:font-genjyuu-bold {
