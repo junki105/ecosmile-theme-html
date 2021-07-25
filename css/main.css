@@ -55,12 +55,20 @@
     font-size: calc(100vw / 900);
   }
 
+  body {
+    font-size: 12rem;
+  }
+
 }
 
 @screen sm {
   
   html {
     font-size: calc(100vw / 640);
+  }
+
+  body {
+    font-size: 12rem;
   }
 
 }
@@ -402,12 +410,6 @@
     --stroke-width: 2px!important;
     --stroke-black: 1px!important;
   }
-
-
-
-
-  
-
 
 }
 
@@ -973,10 +975,90 @@
   .contact-25 span:nth-child(2) {
     font-size: 53rem;
   }
-  
 
 }
 
 
 /* contact end */
+
+/* contact sp begin */
+
+@screen sm {
+
+  .l-contact-sp {
+    background-image: url(../images/contact-bg-sp.png);
+    background-size: 100% 100%;
+    padding: 14rem 10rem 18rem 10rem;
+  }
+  
+  .l-contact-sp h1 {
+    font-size: 40rem;
+    line-height: 48rem;
+    text-shadow: 0px 2px 2px #000000;
+    padding-left: 30rem;
+  }
+  
+  .l-contact-sp h1 img {
+    width: 134rem;
+    right: 18rem;
+    bottom: -19rem;
+  }
+
+  .contact-main-sp {
+    padding: 13rem 10rem 8rem 10rem;
+    margin-top: 19rem;
+  }
+
+  .contact-condition-year {
+    margin-top: 0;
+  }
+
+  .contact-condition-year img {
+    width: 74rem;
+    height: 51rem;
+  }
+
+  .contact-free {
+    font-size: 24rem;
+    line-height: 32rem;
+  }
+
+  .contact-area {
+    font-size: 24rem;
+    line-height: 32rem;
+  }
+
+  .contact-condition-time {
+    margin-bottom: 20rem;
+  }
+
+  .contact-time div:first-child {
+    font-size: 24rem;
+  }
+  
+  .contact-time div:first-child span {
+    font-size: 32rem;
+  }
+  
+  .contact-time div:last-child {
+    width: 130rem;
+    height: 35rem;
+    font-size: 24rem;
+    padding-top: 4rem;
+    margin-left: 10rem;
+  }
+
+  .l-contact-sp address {
+    padding: 10rem;
+    margin-top: 19rem;
+  }
+
+  .l-contact-sp address a img {
+    width: 285rem;
+    height: 130rem;
+  }
+
+}
+
+/* contact sp end */
 
