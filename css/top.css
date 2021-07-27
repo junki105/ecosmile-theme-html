@@ -608,13 +608,13 @@ video {
 @font-face {
   font-family: 'myriadpro-bold';
 
-  src: url('../fonts/MYRIADPRO-BOLD.otf');
+  src: url('../fonts/riadbold.otf');
 }
 
 @font-face {
   font-family: 'myriadpro-semibold';
 
-  src: url('../fonts/MYRIADPRO-SEMIBOLD.otf');
+  src: url('../fonts/riadsemibold.otf');
 }
 
 @font-face {
@@ -31603,6 +31603,10 @@ video {
   }
 }
 
+span {
+  display: inline-block;
+}
+
 .l-hero {
   background-image: url(../images/hero-bg.png);
   background-size: cover;
@@ -31732,17 +31736,17 @@ video {
 
   .truck div {
     width: 5.63vw;
-    padding-bottom: 0.2vw;
-    margin-right: 10rem;
+    padding-bottom: .5vw;
+    margin-right: 6rem;
   }
 
   .truck p {
-    font-size: 3.9vw;
+    font-size: 3.7vw;
   }
 
   .telephone {
     background-color: #0b35c0;
-    padding: .6vw 6vw 1.3vw 6vw;
+    padding: .6vw 6vw .8vw 6vw;
     border-radius: 50px;
     margin-top: 1vw;
   }
@@ -31753,7 +31757,7 @@ video {
   }
 
   .telephone p {
-    font-size: 4.37vw;
+    font-size: 4vw;
   }
 
   .hero-text-0 {
@@ -32121,11 +32125,17 @@ video {
   color: #fffd57;
 }
 
+.eco-ttl-bottom img {
+  width: 24px;
+  margin-right: 10px;
+}
+
 .eco-ttl-bottom img:first-child {
   margin-right: 10px;
 }
 
 .eco-ttl-bottom img:last-child {
+  margin-right: 0px;
   margin-left: 10px;
 }
 
@@ -32216,12 +32226,18 @@ video {
     font-size: 23rem;
   }
 
+  .eco-ttl-bottom img {
+    width: 24rem;
+    margin-right: 10rem;
+  }
+
   .eco-ttl-bottom img:first-child {
     margin-right: 10rem;
   }
 
   .eco-ttl-bottom img:last-child {
     margin-left: 10rem;
+    margin-right: 0rem;
   }
 
   .service-article h2 {
@@ -32394,15 +32410,15 @@ video {
   color: #292929;
 }
 
-.tel-num {
+.telephone-num {
   margin: 8px 0;
 }
 
-.tel-num span {
+.telephone-num span {
   font-size: 50px;
 }
 
-.tel-num img {
+.telephone-num img {
   width: 56px;
   margin-right: 10px;
 }
@@ -32503,15 +32519,15 @@ video {
     font-size: 20rem;
   }
 
-  .tel-num {
+  .telephone-num {
     margin: 8rem 0;
   }
 
-  .tel-num span {
+  .telephone-num span {
     font-size: 49rem;
   }
 
-  .tel-num img {
+  .telephone-num img {
     width: 55rem;
     margin-right: 10rem;
   }
@@ -32554,10 +32570,14 @@ video {
     width: 300rem;
     height: 56rem;
     padding-bottom: 4rem;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
   }
 
   .contact-365 span {
     font-size: 50rem;
+    padding-top: 8rem;
   }
 
   .contact-condition-time {
@@ -32573,16 +32593,20 @@ video {
     width: 300rem;
     height: 56rem;
     padding-bottom: 4rem;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
   }
 
   .contact-25 span:first-child {
     font-size: 19rem;
-    margin-top: 6rem;
+    margin-top: 8rem;
     margin-right: 6rem;
   }
 
   .contact-25 span:nth-child(2) {
     font-size: 52rem;
+    padding-top: 5rem;
   }
 }
 
@@ -32606,6 +32630,7 @@ video {
 
   .l-contact-sp h1 img {
     width: 133rem;
+    min-height: 134rem;
     right: 18rem;
     bottom: -19rem;
   }
@@ -32695,12 +32720,18 @@ video {
   color: #4f0f0f;
 }
 
+.plan-ttl-bottom img {
+  width: 24px;
+  margin-right: 10rem;
+}
+
 .plan-ttl-bottom img:first-child {
-  margin-right: 10px;
+  margin-right: 10rem;
 }
 
 .plan-ttl-bottom img:last-child {
   margin-left: 10px;
+  margin-right: 0rem;
 }
 
 .plan-article h2 {
@@ -32848,12 +32879,18 @@ video {
     font-size: 24rem;
   }
 
+  .plan-ttl-bottom img {
+    width: 24rem;
+    margin-right: 10rem;
+  }
+
   .plan-ttl-bottom img:first-child {
     margin-right: 10rem;
   }
 
   .plan-ttl-bottom img:last-child {
     margin-left: 10rem;
+    margin-right: 0rem;
   }
 
   .plan-article h2 {
@@ -32970,6 +33007,7 @@ video {
 
   .plan-ttl-bottom img {
     width: 25rem;
+    margin-right: 10rem;
   }
 
   .plan-ttl-bottom img:first-child {
@@ -32978,6 +33016,7 @@ video {
 
   .plan-ttl-bottom img:last-child {
     margin-left: 10rem;
+    margin-right: 0rem;
   }
 
   .plan-article h2 {
@@ -33088,18 +33127,29 @@ video {
   margin-bottom: 15px;
 }
 
+.l-compare h1 img {
+  width: 24px;
+  margin-right: 20px;
+}
+
 .l-compare h1 img:first-child {
   margin-right: 20px;
 }
 
 .l-compare h1 img:last-child {
   margin-left: 20px;
+  margin-right: 0px;
+}
+
+.l-compare table {
+  margin-bottom: 0;
 }
 
 .l-compare table tr td {
   width: 25%;
   padding: 11px 30px;
   font-size: 18px;
+  border: none;
 }
 
 .l-compare table tr td:first-child {
@@ -33199,12 +33249,18 @@ video {
     margin-bottom: 15rem;
   }
 
+  .l-compare h1 img {
+    width: 24rem;
+    margin-right: 20px;
+  }
+
   .l-compare h1 img:first-child {
-    margin-right: 20rem;
+    margin-right: 20px;
   }
 
   .l-compare h1 img:last-child {
-    margin-left: 20rem;
+    margin-right: 20px;
+    margin-right: 0px;
   }
 
   .l-compare table tr td {
@@ -33276,6 +33332,7 @@ video {
 
   .l-compare h1 img {
     width: 25rem;
+    margin-right: 20rem;
   }
 
   .l-compare h1 img:first-child {
@@ -33284,6 +33341,7 @@ video {
 
   .l-compare h1 img:last-child {
     margin-left: 20rem;
+    margin-right: 0rem;
   }
 
   .l-compare table tr td {
@@ -33648,6 +33706,7 @@ video {
 
   .l-payment div img {
     width: 520rem;
+    height: 81rem;
   }
 
   /* payment end */
@@ -33673,7 +33732,7 @@ video {
   .l-period main h2 {
     font-size: 44rem;
     line-height: 38rem;
-    padding-bottom: 12rem;
+    padding-bottom: 16rem;
   }
 
   .l-period main h2 span {
@@ -33683,7 +33742,7 @@ video {
   .l-period main h3 {
     font-size: 35rem;
     line-height: 38rem;
-    padding-bottom: 13rem;
+    padding-bottom: 23rem;
   }
 
   .l-period main h4 {
@@ -33693,8 +33752,8 @@ video {
 
   .l-period main h5 {
     font-size: 30rem;
-    line-height: 34rem;
-    padding-bottom: 30rem;
+    line-height: 40rem;
+    padding-bottom: 33rem;
   }
 
   .l-period main h5 span {
@@ -33706,6 +33765,7 @@ video {
     color: black;
     line-height: 20rem;
     margin-left: 120rem;
+    margin-top: -8rem;
     --stroke-width: 2rem!important;
     --stroke-black: 1rem!important;
   }
