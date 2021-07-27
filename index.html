@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/top.css">
   <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+  <script src="../js/accordion.js"></script>
 </head>
 <body>
   <main>
@@ -82,7 +89,7 @@
           </h1>
           <article class="service-article">
             <h2 class="text-center font-myriadpro-bold">SERVICE<span class="font-shingo-debold">サービス</span></h2>
-            <div class="grid justify-center">
+            <div class="grid justify-center sm:justify-between">
               <article class="text-center">
                 <h3 class="flex flex-col items-end justify-center text-center sm:justify-end sm:items-center font-shingo-heavy"><span>不用品回収<br><span>粗大ゴミ処分</span></span></h3>
                 <p>要らなくなった不用品を即日回収いたします。</p>
@@ -223,6 +230,120 @@
             </div>
           </article>
         </section>
+        <section class="l-compare">
+          <h1 class="flex items-end justify-center font-shingo-debold">
+            <img src="../images/plan-line-left.png" alt="">
+            他社と比べて見てください!
+            <img src="../images/plan-line-right.png" alt="">
+          </h1>
+          <div class="compare-table">
+            <table class="w-full assist-table">
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+            <table class="w-full font-shingo-debold">
+              <tr>
+                <td></td>
+                <td>ECOスマイル</td>
+                <td>E社</td>
+                <td>B社</td>
+              </tr>
+              <tr>
+                <td>対応時間</td>
+                <td>24時間<br class="hidden sm:block">年中無休</td>
+                <td>9:00～22:00</td>
+                <td>7:00～23:00</td>
+              </tr>
+              <tr>
+                <td>基本料金</td>
+                <td>無料</td>
+                <td>2,000円～</td>
+                <td>無料</td>
+              </tr>
+              <tr>
+                <td>車両料金</td>
+                <td>無料</td>
+                <td>無料</td>
+                <td>3,000円</td>
+              </tr>
+              <tr>
+                <td>スピード対応</td>
+                <td>25分で到着</td>
+                <td>最短60分</td>
+                <td>前日までに予約</td>
+              </tr>
+              <tr>
+                <td>総費用</td>
+                <td>15,000円～</td>
+                <td>15,000円～</td>
+                <td>19,800円～</td>
+              </tr>
+              <tr>
+                <td>スタッフ評価</td>
+                <td class="relative">◎
+                  <p class="absolute special-p font-shingo-medium">研修制度あり<br class="sm:hidden">清潔感の<br class="hidden sm:block">あるスタッフが待機</p>
+                </td>
+                <td>○</td>
+                <td>△</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+        <section class="l-contact sm:hidden">
+          <address class="flex justify-between not-italic font-shingo-debold">
+            <a href="" class="flex flex-col items-end justify-end">
+              <h1 class="tracking-wider">お気軽に見積もりをご依頼ください!</h1>
+              <div class="flex flex-wrap items-center tel-num whitespace-nowrap">
+                <img src="../images/tel-icon.png" alt="">
+                <span class="leading-none tracking-tight whitespace-nowrap font-myriadpro-bold">0120-243-883</span>
+              </div>
+              <div class="flex items-center justify-end contact-time">
+                <div class="">受付時間&nbsp;<span class="font-myriadpro-semibold">8:00~24:00</span></div>
+                <div class="leading-none text-center text-white">年中無休</div>
+              </div>
+            </a>
+            <a href="" class="p-contact-mail"><img src="../images/btn-mail.png" alt=""></a>
+            <a href="" class="p-contact-line"><img src="../images/btn-line.png" alt=""></a>
+          </address>
+          <div class="flex flex-wrap items-center justify-between contact-condition-year">
+            <img src="../images/contact-truck.png" alt="">
+            <div class="contact-free font-shingo-debold">ご相談見積もり・出張見積もり<span class="font-shingo-heavy">無料</span></div>
+            <div class="flex items-center justify-center leading-none text-white contact-365 font-shingo-heavy"><span class="leading-none font-myriadpro-bold">365</span>日年中無休</div>
+          </div>
+          <div class="flex items-center justify-between contact-condition-time">
+            <div class="tracking-tight contact-area font-shingo-debold">東京・埼玉・神奈川・千葉エリア<span class="font-shingo-heavy">完全対応</span></div>
+            <div class="flex items-center justify-center leading-none text-white contact-25 font-shingo-heavy"><span>最短</span><span class="leading-none font-myriadpro-bold">25</span>分で手配</div>
+          </div>
+        </section>
+        <section class="hidden l-contact-sp sm:block">
+          <h1 class="relative text-white font-shingo-debold">お気軽に見積もりを<br>ご依頼ください!
+            <img src="../images/contact-woman.png" class="absolute" alt="">
+          </h1>
+          <div class="bg-white contact-main-sp">
+            <div class="flex flex-wrap items-center justify-between contact-condition-year">
+              <img src="../images/contact-truck-sp.png" alt="">
+              <div class="contact-free font-shingo-debold">ご相談見積もり<br>出張見積もり<span class="font-shingo-heavy">無料</span></div>
+              <div class="flex items-center justify-center leading-none text-white contact-365 font-shingo-heavy"><span class="leading-none font-myriadpro-bold">365</span>日年中無休</div>
+            </div>
+            <div class="flex items-center justify-between contact-condition-time">
+              <div class="tracking-tight contact-area font-shingo-debold">東京・埼玉・神奈川・千葉<br>エリア<span class="font-shingo-heavy">完全対応</span></div>
+              <div class="flex items-center justify-center leading-none text-white contact-25 font-shingo-heavy"><span>最短</span><span class="leading-none font-myriadpro-bold">25</span>分で手配</div>
+            </div>
+            <a href=""><img class="w-100" src="../images/btn-contact-tel.png" alt=""></a>
+            <div class="flex items-center justify-center font-shingo-debold contact-time">
+              <div>受付時間&nbsp;<span class="font-myriadpro-semibold">8:00~24:00</span></div>
+              <div class="leading-none text-center text-white">年中無休</div>
+            </div>
+          </div>
+          <address class="flex justify-between bg-white">
+            <a href=""><img src="../images/btn-mail-sp.png" alt=""></a>
+            <a href=""><img src="../images/btn-line-sp.png" alt=""></a>
+          </address>
+        </section>
       </main>
       <aside class="l-aside font-shingo-debold xl:hidden">
         <div class="p-3 pt-0 text-center bg-gray-100 border-t-4 payment">
@@ -255,8 +376,262 @@
           <h1 class="mb-2 text-2xl">LINEで見積もり</h1>
           <a class="mt-2" href=""><img src="../images/btn-line.png" alt=""></a>
         </div>
+        <div class="article-tab">
+          <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'recent')" id="defaultOpen">最近の投稿</button>
+            <button class="tablinks" onclick="openCity(event, 'favorite')">人気の投稿</button>
+          </div>
+          <div id="recent" class="tabcontent">
+            <div class="flex justify-between font-normal aside-article">
+              <div class="w-1/2 aside-article-img">
+                <img class="w-full" src="../images/aside-article-eyecache.png" alt="">
+              </div>
+              <div class="w-1/2 aside-article-content">
+                <div class="aside-article-ttl">ECOスマイルは 24時`間365日 対応！</div>
+                <div class="aside-article-date">2018.03.07</div>
+              </div>
+            </div>
+            <div class="flex justify-between font-normal aside-article">
+              <div class="w-1/2 aside-article-img">
+                <img class="w-full" src="../images/aside-article-eyecache.png" alt="">
+              </div>
+              <div class="w-1/2 aside-article-content">
+                <div class="aside-article-ttl">ECOスマイルは 24時`間365日 対応！</div>
+                <div class="aside-article-date">2018.03.07</div>
+              </div>
+            </div>
+            <div class="flex justify-between font-normal aside-article">
+              <div class="w-1/2 aside-article-img">
+                <img class="w-full" src="../images/aside-article-eyecache.png" alt="">
+              </div>
+              <div class="w-1/2 aside-article-content">
+                <div class="aside-article-ttl">ECOスマイルは 24時`間365日 対応！</div>
+                <div class="aside-article-date">2018.03.07</div>
+              </div>
+            </div>
+            <div class="flex justify-between font-normal aside-article">
+              <div class="w-1/2 aside-article-img">
+                <img class="w-full" src="../images/aside-article-eyecache.png" alt="">
+              </div>
+              <div class="w-1/2 aside-article-content">
+                <div class="aside-article-ttl">ECOスマイルは 24時`間365日 対応！</div>
+                <div class="aside-article-date">2018.03.07</div>
+              </div>
+            </div>
+          </div>
+          <div id="favorite" class="tabcontent">
+            <div class="flex justify-between font-normal aside-article">
+              <div class="w-1/2 aside-article-img">
+                <img class="w-full" src="../images/aside-article-eyecache.png" alt="">
+              </div>
+              <div class="w-1/2 aside-article-content">
+                <div class="aside-article-ttl">ECOスマイルは 24時`間365日 対応！</div>
+                <div class="aside-article-date">2018.03.07</div>
+              </div>
+            </div>
+            <div class="flex justify-between font-normal aside-article">
+              <div class="w-1/2 aside-article-img">
+                <img class="w-full" src="../images/aside-article-eyecache.png" alt="">
+              </div>
+              <div class="w-1/2 aside-article-content">
+                <div class="aside-article-ttl">ECOスマイルは 24時`間365日 対応！</div>
+                <div class="aside-article-date">2018.03.07</div>
+              </div>
+            </div>
+            <div class="flex justify-between font-normal aside-article">
+              <div class="w-1/2 aside-article-img">
+                <img class="w-full" src="../images/aside-article-eyecache.png" alt="">
+              </div>
+              <div class="w-1/2 aside-article-content">
+                <div class="aside-article-ttl">ECOスマイルは 24時`間365日 対応！</div>
+                <div class="aside-article-date">2018.03.07</div>
+              </div>
+            </div>
+            <div class="flex justify-between font-normal aside-article">
+              <div class="w-1/2 aside-article-img">
+                <img class="w-full" src="../images/aside-article-eyecache.png" alt="">
+              </div>
+              <div class="w-1/2 aside-article-content">
+                <div class="aside-article-ttl">ECOスマイルは 24時`間365日 対応！</div>
+                <div class="aside-article-date">2018.03.07</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </aside>
     </div>
+    <div class="main-footer">
+      <section class="flex justify-between mx-auto md:flex-col md:items-center l-payment-sec content font-shingo-debold content-bottom">
+        <div class="text-center l-payment">
+          <h1>お支払い方法</h1>
+          <div class="flex justify-center"><img src="../images/payment-card-footer.png" alt=""></div>
+          <p class="">各種クレジットカード、銀行振込（後払い可）、現金払い</p>
+        </div>
+        <div class="l-period">
+          <h1 class="text-center text-white font-shingo-heavy">期間限定キャンペーン</h1>
+          <main class="flex items-end justify-center">
+            <h2 class="font-myriadpro-bold">WEB<br><span>SITE</span></h2>
+            <h3 class="font-shingo-heavy">限定<br>割引</h3>
+            <h4 class="font-myriadpro-bold">2,000</h4>
+            <h5 class="flex flex-col items-center justify-center font-myriadpro-bold">OFF<br><span class="font-shingo-heavy">円</span></h5>
+          </main>
+          <div class="period-bottom text-shadow" data-text="お申し込み時にスタッフへお伝え下さい。">お申し込み時にスタッフへお伝え下さい。</div>
+        </div>
+      </section>
+    </div>
+    <div class="report-container">
+      <section class="mx-auto l-report content content-bottom">
+        <h1 class="text-center font-myriadpro-bold">REPORT<span class="font-shingo-debold">現場レポート</span></h1>
+        <!-- Slider main container -->
+        <div class="swiper-container top-swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper w-100">
+            <!-- Slides -->
+            <div class="bg-white top-report-slide swiper-slide">
+              <div class="">
+                <img class="w-full" src="../images/report-eyecache.png" alt="">
+              </div>
+              <div class="font-normal top-report-date">
+                2018.8.16 <span class="font-medium text-white">カテゴリ</span>
+              </div>
+              <div class="font-normal top-report-title">
+                タイトルが表示されますタイトルが表示されますタイトルが表示されますタイトルが表示されますタイトルが表示されます。
+              </div>
+            </div>
+            <div class="bg-white top-report-slide swiper-slide">
+              <div class="">
+                <img class="w-full" src="../images/report-eyecache.png" alt="">
+              </div>
+              <div class="font-normal top-report-date">
+                2018.8.16 <span class="font-medium text-white">カテゴリ</span>
+              </div>
+              <div class="font-normal top-report-title">
+                タイトルが表示されますタイトルが表示されますタイトルが表示されますタイトルが表示されますタイトルが表示されます。
+              </div>
+            </div>
+            <div class="bg-white top-report-slide swiper-slide">
+              <div class="">
+                <img class="w-full" src="../images/report-eyecache.png" alt="">
+              </div>
+              <div class="font-normal top-report-date">
+                2018.8.16 <span class="font-medium text-white">カテゴリ</span>
+              </div>
+              <div class="font-normal top-report-title">
+                タイトルが表示されますタイトルが表示されますタイトルが表示されますタイトルが表示されますタイトルが表示されます。
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center report-btn">
+          <a href="" class="font-normal">> <span>現場レポート一覧を見る</span></a>
+        </div>
+      </section>
+    </div>
+    <div class="area-container">
+      <section class="mx-auto content content-bottom l-area">
+        <h1 class="text-center font-myriadpro-bold">AREA<span class="font-shingo-debold">対応エリア</span></h1>
+        <div class="flex flex-wrap justify-between accordion area-content">
+          <article class="relative">
+            <input type="checkbox" checked id="faq-1">
+            <h2 class="relative text-center text-white font-shingo-debold"><label for="faq-1">東京都</label></h2>
+            <p class="font-normal">
+              ■青ヶ島村､ 昭島市､ あきる野市､ 足立区､ 荒川区､ 板橋区､ 稲城市､ 江戸川区､ 
+              青梅市､ 大田区､奥多摩町(西多摩郡)<br>
+              ■葛飾区､ 北区､ 清瀬市､ 国立市､ 江東区､ 小金井市､ 国分寺市､ 小平市､ 狛江市<br>
+              ■品川区､ 渋谷区､ 新宿区､ 杉並区､ 墨田区､ 世田谷区<br>
+              ■台東区､ 立川市､ 多摩市､ 中央区､ 調布市､ 千代田区､ 豊島区<br>
+              ■中野区､ 西東京市､ 練馬区<br>
+              ■府中市､ 八王子市､ 羽村市､ 東久留米市､ 東村山市､ 東大和市､ 日野市､ 
+              日の出町(西多摩郡)､福生市､ 文京区<br>
+              ■目黒区､ 町田市､ 瑞穂町､ 三鷹市､ 港区､ 武蔵野市､ 武蔵村山市<br>
+            </p>
+          </article>
+          <article class="relative">
+            <input type="checkbox" id="faq-2">
+            <h2 class="relative text-center text-white font-shingo-debold"><label for="faq-2">神奈川県</label></h2>
+            <p class="font-normal">
+              ■小田原市､ 足柄上郡中井町､ 足柄上郡大井町､ 足柄上郡開成町､ 足柄上郡松
+              田町､ 厚木市､海老名市､ 綾瀬市､ 愛川町､ 伊勢原市<br>
+              ■川崎市､ 川崎市川崎区､ 川崎市幸区､ 川崎市中原区､ 川崎市高津区､ 川崎市
+              宮前区､ 川崎市多摩区､川崎市麻生区､ 鎌倉市､ 清川村<br>
+              ■逗子市､ 相模原市､ 相模原市中央区､ 相模原市南区､ 座間市､ 寒川町<br>
+              ■茅ヶ崎市<br>
+              ■中郡二宮町､ 中郡大磯町<br>
+              ■秦野市､ 葉山町､ 平塚市､ 藤沢市<br>
+              ■横須賀市､ 横浜市､ 横浜市鶴見区､ 横浜市神奈川区､ 横浜市西区､ 横浜市中区､ 横浜市南区､横浜市港南区､ 横浜市保土ヶ谷区､ 横浜市旭区､ 横浜市磯子区､ 
+              横浜市金沢区､ 横浜市港北区､横浜市緑区､ 横浜市青葉区､ 横浜市都筑区､ 
+              横浜市戸塚区､ 横浜市栄区､ 横浜市泉区､ 横浜市泉区､横浜市瀬谷区､ 大和市
+            </p>
+          </article>
+          <article class="relative">
+            <input type="checkbox" id="faq-3">
+            <h2 class="relative text-center text-white font-shingo-debold"><label for="faq-3">埼玉県</label></h2>
+            <p class="font-normal">
+              ■上尾市､ 入間市､ 朝霞市､ 桶川市､ 伊奈町､ 入間郡､ 越生町<br>
+              ■川越市､ 川口市､ 春日部市､ 鴻巣市､ 越谷市､ 久喜市､ 北本市､ 北足立郡､ 
+              川島町､ 北葛飾郡<br>
+              ■さいたま市､ 狭山市､ 草加市､ 志木市､ 坂戸市､ 幸手市､ 白岡市､ 杉戸町<br>
+              ■所沢市､ 戸田市､ 鶴ヶ島市､ ときがわ町<br>
+              ■新座市<br>
+              ■飯能市､ 東松山市､ 富士見市､ 蓮田市､ 日高市､ ふじみ野市､ 鳩山町<br>
+              ■三郷市､ 三芳町､ 毛呂山町､ 南埼玉郡､ 宮代町､ 松伏町<br>
+              ■八潮市､ 吉川市､ 吉見町<br>
+              ■蕨市､ 和光市<br>
+            </p>
+          </article>
+          <article class="relative">
+            <input type="checkbox" id="faq-4">
+            <h2 class="relative text-center text-white font-shingo-debold"><label for="faq-4">千葉県</label></h2>
+            <p class="font-normal">
+              ■市川市､ 浦安市<br>
+              ■柏市<br>
+              ■千葉市<br>
+              ■茅ヶ崎市<br>
+              ■習志野市､ 流山市<br>
+              ■船橋市<br>
+              ■松戸市<br>
+            </p>
+          </article>
+        </div>
+      </section>
+    </div>
   </main>
+  <script>
+    const swiper = new Swiper('.top-swiper-container', {
+      // Optional parameters
+      loop: true,
+      breakpoints: {
+        // when window width is >= 900px
+        900: {
+          slidesPerView: 3,
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 2,
+        },
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+        },
+      },
+      slidesPerView: 1,
+    });
+
+    document.getElementById("defaultOpen").click();
+
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
 </body>
 </html>

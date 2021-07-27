@@ -49,6 +49,17 @@
 
 @tailwind utilities;
 
+@screen xl {
+  
+  html {
+    font-size: calc(100vw / 1170);
+  }
+
+  body {
+    font-size: 12rem;
+  }
+
+}
 @screen md {
   
   html {
@@ -334,6 +345,91 @@
   line-height: 20px;
 }
 
+/* Style the tab */
+
+.article-tab {
+  font-family: 'Yu Gothic';
+  margin-top: 30px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  background-color: #f9f9f9;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  width: 50%;
+  padding: 16px;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.tab button:last-child {
+  border-right: none;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ffffff;
+  border-bottom: none;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  border: 1px solid #ccc;
+  border-top: none;
+  font-family: 'Yu Gothic';
+}
+
+.aside-article-ttl {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.aside-article-date {
+  font-size: 12px;
+  margin-top: 15px;
+  color: #9a9a9a;
+}
+
+.aside-article {
+  padding: 11px 13px 25px 13px;
+  border-bottom: 1px solid #ccc;
+}
+
+.aside-article:last-child {
+  border-bottom: none;
+}
+
+.aside-article-img {
+  width: 108px;
+  height: 108px;
+}
+
+.aside-article-img img {
+  height: 100%;
+}
+
+.aside-article-content {
+  padding: 17px 0px 0px 9px;
+}
+
+
 /* aside end */
 
 /* ----- main begin ------ */
@@ -433,15 +529,15 @@
 @screen md {
 
   .l-intro h1 {
-    font-size: 26rem;
+    font-size: 25rem;
   }
   
   .l-intro h2 {
-    font-size: 42rem;
+    font-size: 41rem;
   }
   
   .l-intro h2 span:nth-child(2) {
-    font-size: 56rem;
+    font-size: 55rem;
     color: #d01919;
   }
 }
@@ -453,23 +549,23 @@
   }
 
   .l-intro h1 {
-    font-size: 30rem;
+    font-size: 29rem;
   }
   
   .l-intro h2 {
-    font-size: 60rem;
+    font-size: 59rem;
     line-height: 1.1;
     margin-top: 15rem;
     margin-bottom: 50rem;
   }
   
   .l-intro h2 span:nth-child(2) {
-    font-size: 70rem;
+    font-size: 69rem;
     color: #d01919;
   }
 
   .l-intro h2 span:last-child {
-    font-size: 52rem;
+    font-size: 51rem;
   }
 }
 
@@ -586,7 +682,7 @@
 @screen md {
     
   .l-service {
-    padding-bottom: 30rem;
+    padding-bottom: 29rem;
   }
 
   .eco-ttl {
@@ -595,11 +691,11 @@
   }
 
   .eco-ttl-top {
-    font-size: 55rem;
+    font-size: 54rem;
   }
 
   .eco-ttl-bottom {
-    font-size: 24rem;
+    font-size: 23rem;
   }
 
   .eco-ttl-bottom img:first-child {
@@ -611,7 +707,7 @@
   }
 
   .service-article h2 {
-    font-size: 30rem;
+    font-size: 29rem;
     margin-top: 10rem;
   }
 
@@ -626,12 +722,12 @@
   .service-article div article h3 {
     width: 400rem;
     height: 190rem;
-    font-size: 30rem;
+    font-size: 29rem;
     padding-right: 11rem;
   }
 
   .service-article div article p {
-    font-size: 16rem;
+    font-size: 15rem;
     margin-top: 8rem;
   }
 
@@ -640,7 +736,7 @@
   }
 
   .service-article div article h3 span {
-    font-size: 28rem;
+    font-size: 27rem;
   }
 
   .service-article div article:nth-child(even) {
@@ -651,10 +747,6 @@
     padding-right: 27rem;
   }
 
-  .service-article div article:nth-child(3) h3 {
-  }
-
-
   .service-article div article:last-child h3 {
     padding-right: 35rem;
   }
@@ -662,7 +754,7 @@
   .service-article a p {
     width: 210rem;
     height: 45rem;
-    font-size: 18rem;
+    font-size: 17rem;
   }
 }
 
@@ -711,6 +803,7 @@
     grid-template-columns: auto auto;
     margin-top: 20rem;
     padding-left: 0;
+    padding: 0 29rem;
   }
 
   .service-article div article h3 {
@@ -891,7 +984,7 @@
   }
   
   .l-contact address a h1 {
-    font-size: 21rem;
+    font-size: 20rem;
   }
   
   .tel-num {
@@ -899,20 +992,20 @@
   }
   
   .tel-num span {
-    font-size: 50rem;
+    font-size: 49rem;
   }
   
   .tel-num img {
-    width: 56rem;
+    width: 55rem;
     margin-right: 10rem;
   }
   
   .contact-time div:first-child {
-    font-size: 18rem;
+    font-size: 17rem;
   }
   
   .contact-time div:first-child span {
-    font-size: 24rem;
+    font-size: 23rem;
   }
   
   .contact-time div:last-child {
@@ -932,16 +1025,16 @@
   }
   
   .contact-condition-year img {
-    width: 53rem;
+    width: 52rem;
     height: 36rem;
   }
   
   .contact-free  {
-    font-size: 33rem;
+    font-size: 32rem;
   }
   
   .contact-365 {
-    font-size: 35rem;
+    font-size: 34rem;
     width: 300rem;
     height: 56rem;
     padding-bottom: 4rem;
@@ -956,24 +1049,24 @@
   }
   
   .contact-area {
-    font-size: 32rem;
+    font-size: 31rem;
   }
   
   .contact-25 {
-    font-size: 40rem;
+    font-size: 39rem;
     width: 300rem;
     height: 56rem;
     padding-bottom: 4rem;
   }
   
   .contact-25 span:first-child {
-    font-size: 20rem;
+    font-size: 19rem;
     margin-top: 6rem;
     margin-right: 6rem;
   }
   
   .contact-25 span:nth-child(2) {
-    font-size: 53rem;
+    font-size: 52rem;
   }
 
 }
@@ -988,18 +1081,18 @@
   .l-contact-sp {
     background-image: url(../images/contact-bg-sp.png);
     background-size: 100% 100%;
-    padding: 14rem 10rem 18rem 10rem;
+    padding: 14rem 9rem 18rem 9rem;
   }
   
   .l-contact-sp h1 {
-    font-size: 40rem;
+    font-size: 39rem;
     line-height: 48rem;
     text-shadow: 0px 2px 2px #000000;
     padding-left: 30rem;
   }
   
   .l-contact-sp h1 img {
-    width: 134rem;
+    width: 133rem;
     right: 18rem;
     bottom: -19rem;
   }
@@ -1019,12 +1112,12 @@
   }
 
   .contact-free {
-    font-size: 24rem;
+    font-size: 23rem;
     line-height: 32rem;
   }
 
   .contact-area {
-    font-size: 24rem;
+    font-size: 23rem;
     line-height: 32rem;
   }
 
@@ -1033,17 +1126,17 @@
   }
 
   .contact-time div:first-child {
-    font-size: 24rem;
+    font-size: 23rem;
   }
   
   .contact-time div:first-child span {
-    font-size: 32rem;
+    font-size: 31rem;
   }
   
   .contact-time div:last-child {
     width: 130rem;
     height: 35rem;
-    font-size: 24rem;
+    font-size: 23rem;
     padding-top: 4rem;
     margin-left: 10rem;
   }
@@ -1381,12 +1474,12 @@
   }
 
   .plan-article h2 {
-    font-size: 35rem;
+    font-size: 34rem;
     margin-top: 10rem;
   }
 
   .plan-article h2 span {
-    font-size: 20rem;
+    font-size: 19rem;
     margin-left: 10rem;
   }
 
@@ -1408,16 +1501,16 @@
   }
 
   .plan-article-main article h3 {
-    font-size: 40rem;
+    font-size: 39rem;
     line-height: 1.8;
   }
 
   .plan-article-main article h3 span {
-    font-size: 51rem;
+    font-size: 50rem;
   }
 
   .plan-article-main article h4 {
-    font-size: 22rem;
+    font-size: 21rem;
     line-height: 1.8;
   }
 
@@ -1427,15 +1520,15 @@
 
   .plan-article-main article main p:first-child {
     line-height: 30rem;
-    font-size: 24rem;
+    font-size: 23rem;
   }
 
   .plan-article-main article main p:last-child {
-    font-size: 30rem;
+    font-size: 29rem;
   }
 
   .plan-article-main article:last-child main p:first-child {
-    font-size: 24rem;
+    font-size: 23rem;
     line-height: 30rem;
   }
 
@@ -1476,4 +1569,936 @@
 }
 
 /* plan end */
+
+/* compare begin */
+
+.l-compare {
+  padding: 40px 0;
+}
+
+.l-compare h1 {
+  font-size: 30px;
+  color: #4f0f0f;
+  margin-bottom: 15px;
+}
+
+.l-compare h1 img:first-child {
+  margin-right: 20px;
+}
+
+.l-compare h1 img:last-child {
+  margin-left: 20px;
+}
+
+.l-compare table tr td {
+  width: 25%;
+  padding: 11px 30px;
+  font-size: 18px;
+}
+
+
+.l-compare table tr td:first-child {
+  width: 20.2%;
+}
+
+.l-compare table tr td:nth-child(2) {
+  width: 28.6%;
+}
+
+.l-compare table tr td:nth-child(3) {
+  width: 25.8%;
+}
+
+.l-compare table tr td:last-child {
+  width: 25.4%;
+  border-left: 1px solid #ccc;
+}
+
+
+.l-compare table tr:nth-child(odd) td {
+  background-color: #f2f2f2;
+}
+
+.l-compare table tr:nth-child(even) td {
+  background-color: #fffbe8;
+}
+
+.l-compare table tr td:nth-child(2) {
+  font-size: 20px;
+  color: #ed1d1c;
+}
+
+.l-compare table tr:last-child td:not(first-child) {
+  color: #ed1d1c;
+}
+
+.l-compare table tr:last-child td:first-child {
+  color: #000;
+}
+
+.l-compare table tr td:nth-child(2) {
+  border-left: 3px solid #3d8900;
+  border-right: 3px solid #3d8900;
+}
+
+.l-compare table tr:last-child td:nth-child(2) {
+  border-bottom: 3px solid #3d8900;
+}
+
+.l-compare table tr:first-child td {
+  font-size: 24px;
+}
+
+.l-compare table tr:first-child td:nth-child(2) {
+  font-size: 28px;
+  padding-top: 0px;
+  background-color: #3d8900;
+  color: white;
+}
+
+.l-compare table tr:first-child td:nth-child(3) {
+  color: #015ce4;
+}
+
+.l-compare table tr:first-child td:last-child {
+  color: #ff620b;
+}
+
+.special-p {
+  top: 8px;
+  left: 60px;
+  font-size: 14px;
+  line-height: 18px;
+  color: black;
+}
+
+.assist-table tr td {
+  background-color: white!important;
+  padding: 3px!important;
+}
+  
+.assist-table tr td:nth-child(2) {
+  background-color: #3d8900!important;
+}
+
+.assist-table tr td:last-child {
+  border-left: none!important;
+}
+
+@screen md {
+    
+  .l-compare {
+    padding: 40rem 0;
+  }
+
+  .l-compare h1 {
+    font-size: 30rem;
+    margin-bottom: 15rem;
+  }
+
+  .l-compare h1 img:first-child {
+    margin-right: 20rem;
+  }
+
+  .l-compare h1 img:last-child {
+    margin-left: 20rem;
+  }
+    
+  .l-compare table tr td {
+    width: 25%;
+    padding: 11rem 30rem;
+    font-size: 18rem;
+  }
+
+  .l-compare table tr td:first-child {
+    width: 20.2%;
+  }
+
+  .l-compare table tr td:nth-child(2) {
+    width: 28.6%;
+  }
+
+  .l-compare table tr td:nth-child(3) {
+    width: 25.8%;
+  }
+
+  .l-compare table tr td:last-child {
+    width: 25.4%;
+    border-left: 1rem solid #ccc;
+  }
+
+  .l-compare table tr td:nth-child(2) {
+    font-size: 20rem;
+  }
+
+  .l-compare table tr td:nth-child(2) {
+    border-left: 3rem solid #3d8900;
+    border-right: 3rem solid #3d8900;
+  }
+
+  .l-compare table tr:last-child td:nth-child(2) {
+    border-bottom: 3rem solid #3d8900;
+  }
+
+  .l-compare table tr:first-child td {
+    font-size: 24rem;
+  }
+
+  .l-compare table tr:first-child td:nth-child(2) {
+    font-size: 28rem;
+    padding-top: 0rem;
+  }
+
+  .special-p {
+    top: 8rem;
+    left: 60rem;
+    font-size: 14rem;
+    line-height: 18rem;
+  }
+
+  .assist-table tr td {
+    padding: 3rem!important;
+  }
+
+}
+
+@screen sm {
+    
+  .l-compare {
+    padding: 30rem 0;
+  }
+
+  .l-compare h1 {
+    font-size: 35rem;
+    margin-bottom: 15rem;
+  }
+
+  .l-compare h1 img {
+    width: 25rem;
+  }
+
+  .l-compare h1 img:first-child {
+    margin-right: 20rem;
+  }
+
+  .l-compare h1 img:last-child {
+    margin-left: 20rem;
+  }
+  .l-compare table tr td {
+    width: 26%;
+    padding: 9rem 3rem 9rem 20rem;
+    font-size: 19rem;
+  }
+
+  .l-compare table tr td:first-child {
+    width: 24.2%;
+  }
+
+  .l-compare table tr td:nth-child(2) {
+    width: 28.6%;
+  }
+
+  .l-compare table tr td:nth-child(3) {
+    width: 23%;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .l-compare table tr td:last-child {
+    width: 24.2%;
+    border-left: 1rem solid #ccc;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .l-compare table tr td:nth-child(2) {
+    font-size: 23rem;
+  }
+
+  .l-compare table tr td:nth-child(2) {
+    border-left: 3rem solid #3d8900;
+    border-right: 3rem solid #3d8900;
+    text-align: center;
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
+
+  .l-compare table tr:last-child td:nth-child(2) {
+    border-bottom: 3rem solid #3d8900;
+  }
+
+  .l-compare table tr:first-child td {
+    font-size: 23rem;
+  }
+
+  .l-compare table tr:first-child td:nth-child(2) {
+    font-size: 26rem;
+    padding: 0rem;
+    padding-bottom: 12rem;
+  }
+
+  .l-compare table tr:last-child td {
+    padding-bottom: 45rem;
+  }
+
+  .special-p {
+    top: 44rem;
+    left: 5rem;
+    font-size: 16rem;
+    line-height: 20rem;
+  }
+
+  .assist-table tr td {
+    padding: 3rem!important;
+  }
+}
+
+
+/* compare end */
+
+/* ----- content bottom begin --------- */
+
+.content-bottom {
+  padding: 50px 44px;
+}
+
+/* payment begin */
+
+.main-footer {
+  border-top: 2px solid #cccccc;
+}
+
+.l-payment {
+  background-color: #e4e4e4;
+  border-top: 3px solid #7991e0;
+  width: 520px;
+  height: 181px;
+}
+
+.l-payment h1 {
+  font-size: 18px;
+  line-height: 50px;
+}
+
+.l-payment p {
+  font-size: 18px;
+  line-height: 50px;
+  color: #002088;
+}
+
+.l-payment div img {
+  width: 470px;
+}
+
+/* payment end */
+
+/* period begin */
+  
+.l-period {
+  background-image: url(../images/period-footer-bg.png);
+  background-size: 100% 100%;
+  width: 520px;
+  height: 181px;
+}
+
+.l-period h1 {
+  font-size: 21px;
+  line-height: 54px;
+}
+
+.l-period main h2 {
+  font-size: 44px;
+  line-height: 38px;
+  padding-bottom: 14px;
+}
+
+.l-period main h2 span {
+  letter-spacing: 1px;
+}
+
+.l-period main h3 {
+  font-size: 35px;
+  line-height: 38px;
+  padding-bottom: 14px;
+}
+
+.l-period main h4 {
+  font-size: 100px;
+  line-height: 1;
+  color: #d80100;
+}
+
+.l-period main h5 {
+  font-size: 30px;
+  line-height: 34px;
+  color: #d80100;
+  padding-bottom: 30px;
+}
+
+.l-period main h5 span {
+  font-size: 60px;
+}
+
+.l-period .period-bottom {
+  color: #008900;
+  font-size: 15px;
+  line-height: 20px;
+  margin-left: 120px;
+  --stroke-width: 2px!important;
+  --stroke-black: 1px!important;
+}
+
+@screen xl {
+    
+  .content-bottom {
+    padding: 50rem 44rem;
+  }
+
+  .l-payment {
+    background-color: #e4e4e4;
+    border-top: 3px solid #7991e0;
+    width: 520rem;
+    height: 181rem;
+  }
+
+  .l-payment h1 {
+    font-size: 18rem;
+    line-height: 50rem;
+  }
+
+  .l-payment p {
+    font-size: 18rem;
+    line-height: 50rem;
+    color: #002088;
+  }
+
+  .l-payment div img {
+    width: 470rem;
+  }
+
+  .l-period {
+    background-image: url(../images/period-footer-bg.png);
+    width: 520rem;
+    height: 181rem;
+  }
+  
+  .l-period h1 {
+    font-size: 21rem;
+    line-height: 54rem;
+  }
+  
+  .l-period main h2 {
+    font-size: 44rem;
+    line-height: 38rem;
+    padding-bottom: 14rem;
+  }
+  
+  .l-period main h2 span {
+    letter-spacing: 1rem;
+  }
+  
+  .l-period main h3 {
+    font-size: 35rem;
+    line-height: 38rem;
+    padding-bottom: 14rem;
+  }
+  
+  .l-period main h4 {
+    font-size: 100rem;
+    line-height: 1;
+  }
+  
+  .l-period main h5 {
+    font-size: 30rem;
+    line-height: 34rem;
+    padding-bottom: 30rem;
+  }
+  
+  .l-period main h5 span {
+    font-size: 60rem;
+  }
+  
+  .l-period .period-bottom {
+    font-size: 15rem;
+    line-height: 20rem;
+    margin-left: 120rem;
+    --stroke-width: 2rem!important;
+    --stroke-black: 1rem!important;
+  }
+}
+
+@screen md {
+  .content-bottom {
+    width: 100%;
+  }
+
+  .content-bottom {
+    padding: 30px 44px;
+  }
+  
+  /* payment begin */
+  
+  .main-footer {
+    border-top: 2px solid #cccccc;
+  }
+  
+  .l-payment {
+    border-top: 3px solid #7991e0;
+    width: 520px;
+    height: 181px;
+  }
+  
+  .l-payment h1 {
+    font-size: 18px;
+    line-height: 50px;
+  }
+  
+  .l-payment p {
+    font-size: 18px;
+    line-height: 50px;
+  }
+  
+  .l-payment div img {
+    width: 470px;
+  }
+  
+  /* payment end */
+  
+  /* period begin */
+    
+  .l-period {
+    width: 520px;
+    height: 181px;
+    margin-top: 30px;
+  }
+  
+  .l-period h1 {
+    font-size: 21px;
+    line-height: 54px;
+  }
+  
+  .l-period main h2 {
+    font-size: 44px;
+    line-height: 38px;
+    padding-bottom: 14px;
+  }
+  
+  .l-period main h2 span {
+    letter-spacing: 1px;
+  }
+  
+  .l-period main h3 {
+    font-size: 35px;
+    line-height: 38px;
+    padding-bottom: 14px;
+  }
+  
+  .l-period main h4 {
+    font-size: 100px;
+    line-height: 1;
+  }
+  
+  .l-period main h5 {
+    font-size: 30px;
+    line-height: 34px;
+    padding-bottom: 30px;
+  }
+  
+  .l-period main h5 span {
+    font-size: 60px;
+  }
+  
+  .l-period .period-bottom {
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 120px;
+    --stroke-width: 2px!important;
+    --stroke-black: 1px!important;
+  }
+}
+
+@screen sm {
+  
+  .content-bottom {
+    padding: 40rem 20rem;
+  }
+  
+  /* payment begin */
+  
+  .main-footer {
+    border-top: unset;
+  }
+  
+  .l-payment {
+    border-top: 9rem solid #7991e0;
+    width: 100%;
+    height: 190rem;
+  }
+  
+  .l-payment h1 {
+    font-size: 21rem;
+    line-height: 42rem;
+  }
+  
+  .l-payment p {
+    font-size: 21rem;
+    line-height: 50rem;
+  }
+  
+  .l-payment div img {
+    width: 520rem;
+  }
+  
+  /* payment end */
+  
+  /* period begin */
+    
+  .l-period {
+    width: 100%;
+    height: 190rem;
+    margin-top: 30rem;
+    background-image: url(../images/period-footer-bg-sp.png);
+  }
+  
+  .l-period h1 {
+    font-size: 22rem;
+    line-height: 55rem;
+  }
+  
+  .l-period main {
+    margin-top: 5rem;
+  }
+
+  .l-period main h2 {
+    font-size: 44rem;
+    line-height: 38rem;
+    padding-bottom: 12rem;
+  }
+  
+  .l-period main h2 span {
+    letter-spacing: 1rem;
+  }
+  
+  .l-period main h3 {
+    font-size: 35rem;
+    line-height: 38rem;
+    padding-bottom: 13rem;
+  }
+  
+  .l-period main h4 {
+    font-size: 100rem;
+    line-height: 1;
+  }
+  
+  .l-period main h5 {
+    font-size: 30rem;
+    line-height: 34rem;
+    padding-bottom: 30rem;
+  }
+  
+  .l-period main h5 span {
+    font-size: 60rem;
+  }
+  
+  .l-period .period-bottom {
+    font-size: 20rem;
+    color: black;
+    line-height: 20rem;
+    margin-left: 120rem;
+    --stroke-width: 2rem!important;
+    --stroke-black: 1rem!important;
+  }
+}
+
+/* period end */
+
+/* report begin */
+
+.report-container {
+  background-color: #f7f7f7;
+  font-family: 'Yu Gothic';
+}
+
+.report-container .content-bottom {
+  padding: 30px 44px;
+}
+
+.l-report h1 {
+  font-size: 30px;
+  color: #ff4e00;
+}
+
+.l-report h1 span {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.top-swiper-container  {
+  padding: 1px!important;
+  margin-top: 20px;
+}
+
+.top-report-slide {
+  padding: 40px 25px 30px 25px;
+  border: 1px solid #cccccc;
+}
+
+.top-report-date {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.top-report-date span {
+  background-color: #f31938;
+  font-size: 13px;
+  margin-left: 5px;
+  padding: 1px 15px;
+}
+
+.top-report-title {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.report-btn {
+  margin-top: 30px;
+}
+
+.l-report a {
+  font-size: 16px;
+}
+
+.l-report a span {
+  text-decoration: underline;
+}
+
+@screen sm {
+
+    
+  .report-container .content-bottom {
+    padding: 40rem 55rem;
+  }
+
+  .l-report h1 {
+    font-size: 35rem;
+  }
+
+  .l-report h1 span {
+    font-size: 20rem;
+    margin-left: 10rem;
+  }
+
+  .top-swiper-container  {
+    padding: 1rem!important;
+    margin-top: 20rem;
+    border: 1rem solid #cccccc;
+  }
+
+  .top-report-slide {
+    padding: 30rem 55rem 28rem 55rem;
+    border: unset;
+    background-color: white;
+  }
+
+  .top-report-date {
+    font-size: 24rem;
+    margin-top: 30rem;
+    margin-bottom: 10rem;
+  }
+
+  .top-report-date span {
+    background-color: #f31938;
+    font-size: 24rem;
+    margin-left: 5rem;
+    padding: 1rem 15rem;
+  }
+
+  .top-report-title {
+    font-size: 24rem;
+    line-height: 30rem;
+  }
+
+  .report-btn {
+    margin-top: 40rem;
+  }
+
+  .l-report a {
+    font-size: 24rem;
+  }
+
+  .l-report a span {
+    text-decoration: underline;
+  }
+
+}
+
+/* report end */
+
+/* area begin */
+
+
+.l-area h1 {
+  font-size: 30px;
+}
+
+.l-area h1 span {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.area-content {
+  margin-top: 20px;
+}
+
+.area-content article {
+  width: 520px;
+  padding-bottom: 20px;
+}
+
+.area-content article h2 {
+  font-size: 20px;
+  line-height: 37px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+}
+
+.area-content article p {
+  font-size: 15px;
+  line-height: 24px;
+  font-family: 'Yu Gothic';
+  word-break: keep-all; 
+}
+
+.area-content article:first-child h2 {
+  background-color: #0e99f1;
+}
+
+.area-content article:nth-child(2) h2 {
+  background-color: #ff9e35;
+}
+
+.area-content article:nth-child(3) h2 {
+  background-color: #80bc04;
+}
+
+.area-content article:last-child h2 {
+  background-color: #ff5d96;
+}
+
+
+.area-content article input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity:0;
+  visibility: 0;
+}
+
+@screen xl {
+  
+  .area-content article {
+    width: 45vw;
+  }
+}
+
+@screen md {
+  
+  .area-content article {
+    width: 100%;
+  }
+}
+
+@screen sm {
+
+  .l-area h1 {
+    font-size: 35rem;
+  }
+  
+  .l-area h1 span {
+    font-size: 20rem;
+    margin-left: 10rem;
+  }
+  
+  .area-content {
+    margin-top: 20rem;
+  }
+  
+  .area-content article {
+    padding-bottom: 0;
+    margin-bottom: 30rem;
+  }
+  
+  .area-content article h2 {
+    font-size: 30rem;
+    line-height: 65rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+  
+  .area-content article p {
+    font-size: 24rem;
+    line-height: 30rem;
+  }
+
+  .area-content article input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity:0;
+    visibility: 0;
+  }
+  
+  .area-content article h2 label::after{
+    content: "";
+    display: inline-block;
+    border: 10rem solid transparent;
+    border-top: 15rem solid white;
+    position: absolute;
+    right: 20rem;
+    top: 28rem;
+  }
+  .area-content article h2 label{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+  }
+
+  .area-content article p{
+    max-height:0rem;
+    overflow: hidden;
+    transition:max-height 0.5s;
+  }
+
+  input:checked ~ h2 label::after{
+    border: 10rem solid transparent;
+    border-bottom: 15rem solid white;
+    right: 20rem;
+    top: 17rem;
+    position: absolute;
+  }
+
+  input:checked ~ h2 ~ p{
+    max-height:600rem;
+    padding-top: 30rem;
+  }
+
+}
+
+/* area end */
+
+/* ----- content bottom begin --------- */
+
+
 
