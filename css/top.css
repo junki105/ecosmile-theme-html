@@ -31810,7 +31810,7 @@ span {
   }
 }
 
-.content {
+.content-new {
   max-width: 1170px;
 }
 
@@ -31936,12 +31936,12 @@ span {
 
 .aside-article-date {
   font-size: 12px;
-  margin-top: 15px;
+  margin-top: 5px;
   color: #9a9a9a;
 }
 
 .aside-article {
-  padding: 11px 13px 25px 13px;
+  padding: 20px 13px 20px 13px;
   border-bottom: 1px solid #ccc;
 }
 
@@ -31959,17 +31959,261 @@ span {
 }
 
 .aside-article-content {
-  padding: 17px 0px 0px 9px;
+  padding: 0px 0px 0px 9px;
 }
 
 /* aside end */
 
 /* ----- main begin ------ */
 
+/* banner begin */
+
+.top-banner-img-01, .top-banner-img-02 {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1169px) {
+  .top-banner-img-01 {
+    margin-top: 20rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .top-banner-01 {
+    padding: 20rem 10rem;
+  }
+
+  .top-banner-img-01 {
+    margin-top: 0;
+    margin-bottom: 15rem;
+  }
+
+  .top-banner-img-02 {
+    margin-bottom: 0rem;
+  }
+
+  .top-banner-02 {
+    padding: 0rem 10rem 40rem 10rem;
+  }
+}
+
+/* banner end */
+
+/* reason begin */
+
+.l-reason {
+  padding: 60px 0;
+  background-color: #f6f5ef;
+}
+
+.reason-ttl {
+  padding-top: 67px;
+  font-size: 45px;
+  background-image: url(../images/bg-reason-ttl.png);
+  background-size: 100% 100%;
+  height: 194px;
+}
+
+.reason-ttl div {
+  font-size: 50px;
+  border-radius: 50%;
+  padding: 0px 5px 9px 5px;
+  background-color: #7ba50f;
+}
+
+.l-reason-ttl img {
+  bottom: 20%;
+}
+
+.reason-article h2 {
+  color: #3d8900;
+  font-size: 30px;
+}
+
+.reason-article h2 span {
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.reason-article {
+  padding: 0 30px;
+}
+
+.p-reason-article h3 {
+  font-size: 30px;
+  color: #814516;
+  padding-left: 80px;
+  border-radius: 5px;
+  height: 60px;
+  padding-top: 6px;
+  margin-top: 30px;
+}
+
+.p-reason-article h3 img {
+  width: 60px;
+}
+
+.p-reason-article:nth-child(2) h3 {
+  margin-top: 7px;
+}
+
+.p-reason-article p {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: 'Yu Gothic';
+  padding-top: 21px;
+  padding-left: 60px;
+}
+
+@media (max-width: 899px) {
+  .l-reason {
+    padding: 60rem 0;
+  }
+
+  .reason-ttl {
+    padding-top: 67rem;
+    font-size: 45rem;
+    height: 194rem;
+  }
+
+  .reason-ttl div {
+    font-size: 50rem;
+    border-radius: 50%;
+    padding: 0rem 5rem 9rem 5rem;
+  }
+
+  .l-reason-ttl img {
+    bottom: 20%;
+  }
+
+  .reason-article h2 {
+    font-size: 30rem;
+  }
+
+  .reason-article h2 span {
+    font-size: 14rem;
+    margin-left: 10rem;
+    margin-top: 20rem;
+  }
+
+  .reason-article {
+    padding: 0 30rem;
+  }
+
+  .p-reason-article h3 {
+    font-size: 30rem;
+    padding-left: 80rem;
+    border-radius: 5rem;
+    height: 60rem;
+    padding-top: 6rem;
+    margin-top: 30rem;
+  }
+
+  .p-reason-article h3 img {
+    width: 60rem;
+  }
+
+  .p-reason-article:nth-child(2) h3 {
+    margin-top: 7rem;
+  }
+
+  .p-reason-article p {
+    font-size: 18rem;
+    line-height: 26rem;
+    padding-top: 21rem;
+    padding-left: 60rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .l-reason {
+    padding: 60rem 0;
+  }
+
+  .reason-ttl {
+    padding-top: 62rem;
+    font-size: 35rem;
+    background-image: url(../images/bg-reason-ttl-sp.png);
+    height: 174rem;
+  }
+
+  .reason-ttl div {
+    font-size: 44rem;
+    border-radius: 50%;
+    padding: 0rem 5rem 9rem 5rem;
+    background-color: #7ba50f;
+  }
+
+  .l-reason-ttl img {
+    bottom: 20%;
+  }
+
+  .reason-article h2 {
+    color: #3d8900;
+    font-size: 35rem;
+  }
+
+  .reason-article h2 span {
+    font-size: 14rem;
+    margin-left: 5rem;
+    margin-top: 20rem;
+  }
+
+  .reason-article {
+    padding: 0 20rem;
+  }
+
+  .p-reason-article h3 {
+    font-size: 32rem;
+    padding-left: 80rem;
+    border-radius: 5rem;
+    height: 60rem;
+    padding-top: 6rem;
+    margin-top: 30rem;
+    letter-spacing: 1rem;
+    line-height: 44rem;
+  }
+
+  .p-reason-article h3 img {
+    width: 60rem;
+  }
+
+  .p-reason-article:nth-child(2) h3 {
+    margin-top: 7rem;
+  }
+
+  .p-reason-article:nth-child(3) h3 {
+    height: 110rem;
+  }
+
+  .p-reason-article:nth-child(4) h3 {
+    height: 110rem;
+  }
+
+  .p-reason-article:nth-child(3) h3 img {
+    width: 75.5rem;
+  }
+
+  .p-reason-article:nth-child(4) h3 img {
+    width: 76rem;
+  }
+
+  .p-reason-article p {
+    font-size: 24rem;
+    line-height: 26rem;
+    font-family: 'Yu Gothic';
+    padding-top: 21rem;
+    padding-left: 0rem;
+  }
+}
+
+/* reason end */
+
 /* sp intro begin */
 
 @media (max-width: 639px) {
-  .content {
+  .content-new {
     margin-top: 15rem;
   }
 
@@ -33817,6 +34061,15 @@ span {
   padding: 1px 15px;
 }
 
+.top-report-date span a {
+  font-size: 13px!important;
+}
+
+.top-report-date span a:hover {
+  color: white;
+  opacity: 0.9;
+}
+
 .top-report-title {
   font-size: 15px;
   line-height: 24px;
@@ -33868,9 +34121,13 @@ span {
 
   .top-report-date span {
     background-color: #f31938;
-    font-size: 24rem;
+    font-size: 22rem;
     margin-left: 5rem;
     padding: 1rem 15rem;
+  }
+
+  .top-report-date span a {
+    font-size: 22rem!important;
   }
 
   .top-report-title {
@@ -33892,6 +34149,77 @@ span {
 }
 
 /* report end */
+
+/* footer banner begin */
+
+.footer-banner img {
+  width: 520px;
+}
+
+.footer-banner.content-bottom {
+  padding-top: 0;
+  margin-top: -20px;
+}
+
+@media (max-width: 1169px) {
+  .footer-banner img {
+    width: 520rem;
+  }
+}
+
+@media (max-width: 899px) {
+  .footer-banner img {
+    width: 560rem;
+  }
+
+  .footer-banner.content-bottom {
+    padding-top: 0;
+    margin-top: -10rem;
+  }
+
+  .footer-banner img:first-child {
+    margin-top: 30rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .footer-banner img {
+    width: 100%;
+  }
+
+  .footer-banner.content-bottom {
+    padding-top: 0;
+    margin-top: -10rem;
+  }
+
+  .footer-banner img:first-child {
+    margin-top: 30rem;
+  }
+}
+
+/* footer banner end */
+
+/* footer contact begin */
+
+.footer-contact-container .l-contact address {
+  padding: 20px 100px;
+}
+
+.footer-contact-container .l-contact .contact-condition-year, .footer-contact-container .l-contact .contact-condition-time {
+  padding: 0 120px;
+}
+
+@media (max-width: 1169px) {
+  .footer-contact-container .l-contact address {
+    padding: 20rem 0rem;
+  }
+
+  .footer-contact-container .l-contact .contact-condition-year, .footer-contact-container .l-contact .contact-condition-time {
+    padding: 0;
+  }
+}
+
+/* footer contact end */
 
 /* area begin */
 
