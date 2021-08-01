@@ -576,33 +576,9 @@ video {
 }
 
 @font-face {
-  font-family: 'shingo-bold';
-
-  src: url('../fonts/AOTFShinGoProBold.otf');
-}
-
-@font-face {
-  font-family: 'shingo-exlight';
-
-  src: url('../fonts/AOTFShinGoProExLight.otf');
-}
-
-@font-face {
-  font-family: 'shingo-light';
-
-  src: url('../fonts/AOTFShinGoProLight.otf');
-}
-
-@font-face {
   font-family: 'shingo-medium';
 
   src: url('../fonts/AOTFShinGoProMedium.otf');
-}
-
-@font-face {
-  font-family: 'shingo-regular';
-
-  src: url('../fonts/AOTFShinGoProRegular.otf');
 }
 
 @font-face {
@@ -621,12 +597,6 @@ video {
   font-family: 'genjyuu-bold';
 
   src: url('../fonts/Gen Jyuu Gothic Monospace Bold.ttf');
-}
-
-@font-face {
-  font-family: 'kozuka-bold';
-
-  src: url('../fonts/KozGoPro-Bold.otf');
 }
 
 .sr-only {
@@ -22359,28 +22329,12 @@ video {
   font-family: shingo-debold;
 }
 
-.font-shingo-bold {
-  font-family: shingo-bold;
-}
-
-.font-shingo-exlight {
-  font-family: shingo-exlight;
-}
-
 .font-shingo-heavy {
   font-family: shingo-heavy;
 }
 
-.font-shingo-light {
-  font-family: shingo-light;
-}
-
 .font-shingo-medium {
   font-family: shingo-medium;
-}
-
-.font-shingo-regular {
-  font-family: shingo-regular;
 }
 
 .font-myriadpro-bold {
@@ -22393,10 +22347,6 @@ video {
 
 .font-genjyuu-bold {
   font-family: genjyuu-bold;
-}
-
-.font-kozuka-bold {
-  font-family: kozuka-bold;
 }
 
 .text-xs {
@@ -56044,28 +55994,12 @@ span {
     font-family: shingo-debold;
   }
 
-  .\32xl\:font-shingo-bold {
-    font-family: shingo-bold;
-  }
-
-  .\32xl\:font-shingo-exlight {
-    font-family: shingo-exlight;
-  }
-
   .\32xl\:font-shingo-heavy {
     font-family: shingo-heavy;
   }
 
-  .\32xl\:font-shingo-light {
-    font-family: shingo-light;
-  }
-
   .\32xl\:font-shingo-medium {
     font-family: shingo-medium;
-  }
-
-  .\32xl\:font-shingo-regular {
-    font-family: shingo-regular;
   }
 
   .\32xl\:font-myriadpro-bold {
@@ -56078,10 +56012,6 @@ span {
 
   .\32xl\:font-genjyuu-bold {
     font-family: genjyuu-bold;
-  }
-
-  .\32xl\:font-kozuka-bold {
-    font-family: kozuka-bold;
   }
 
   .\32xl\:text-xs {
@@ -86911,28 +86841,12 @@ span {
     font-family: shingo-debold;
   }
 
-  .xl\:font-shingo-bold {
-    font-family: shingo-bold;
-  }
-
-  .xl\:font-shingo-exlight {
-    font-family: shingo-exlight;
-  }
-
   .xl\:font-shingo-heavy {
     font-family: shingo-heavy;
   }
 
-  .xl\:font-shingo-light {
-    font-family: shingo-light;
-  }
-
   .xl\:font-shingo-medium {
     font-family: shingo-medium;
-  }
-
-  .xl\:font-shingo-regular {
-    font-family: shingo-regular;
   }
 
   .xl\:font-myriadpro-bold {
@@ -86945,10 +86859,6 @@ span {
 
   .xl\:font-genjyuu-bold {
     font-family: genjyuu-bold;
-  }
-
-  .xl\:font-kozuka-bold {
-    font-family: kozuka-bold;
   }
 
   .xl\:text-xs {
@@ -117778,28 +117688,12 @@ span {
     font-family: shingo-debold;
   }
 
-  .lg\:font-shingo-bold {
-    font-family: shingo-bold;
-  }
-
-  .lg\:font-shingo-exlight {
-    font-family: shingo-exlight;
-  }
-
   .lg\:font-shingo-heavy {
     font-family: shingo-heavy;
   }
 
-  .lg\:font-shingo-light {
-    font-family: shingo-light;
-  }
-
   .lg\:font-shingo-medium {
     font-family: shingo-medium;
-  }
-
-  .lg\:font-shingo-regular {
-    font-family: shingo-regular;
   }
 
   .lg\:font-myriadpro-bold {
@@ -117812,10 +117706,6 @@ span {
 
   .lg\:font-genjyuu-bold {
     font-family: genjyuu-bold;
-  }
-
-  .lg\:font-kozuka-bold {
-    font-family: kozuka-bold;
   }
 
   .lg\:text-xs {
@@ -148645,28 +148535,12 @@ span {
     font-family: shingo-debold;
   }
 
-  .md\:font-shingo-bold {
-    font-family: shingo-bold;
-  }
-
-  .md\:font-shingo-exlight {
-    font-family: shingo-exlight;
-  }
-
   .md\:font-shingo-heavy {
     font-family: shingo-heavy;
   }
 
-  .md\:font-shingo-light {
-    font-family: shingo-light;
-  }
-
   .md\:font-shingo-medium {
     font-family: shingo-medium;
-  }
-
-  .md\:font-shingo-regular {
-    font-family: shingo-regular;
   }
 
   .md\:font-myriadpro-bold {
@@ -148679,10 +148553,6 @@ span {
 
   .md\:font-genjyuu-bold {
     font-family: genjyuu-bold;
-  }
-
-  .md\:font-kozuka-bold {
-    font-family: kozuka-bold;
   }
 
   .md\:text-xs {
@@ -179512,28 +179382,12 @@ span {
     font-family: shingo-debold;
   }
 
-  .sm\:font-shingo-bold {
-    font-family: shingo-bold;
-  }
-
-  .sm\:font-shingo-exlight {
-    font-family: shingo-exlight;
-  }
-
   .sm\:font-shingo-heavy {
     font-family: shingo-heavy;
   }
 
-  .sm\:font-shingo-light {
-    font-family: shingo-light;
-  }
-
   .sm\:font-shingo-medium {
     font-family: shingo-medium;
-  }
-
-  .sm\:font-shingo-regular {
-    font-family: shingo-regular;
   }
 
   .sm\:font-myriadpro-bold {
@@ -179546,10 +179400,6 @@ span {
 
   .sm\:font-genjyuu-bold {
     font-family: genjyuu-bold;
-  }
-
-  .sm\:font-kozuka-bold {
-    font-family: kozuka-bold;
   }
 
   .sm\:text-xs {
@@ -188713,6 +188563,3 @@ span {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-
-
-

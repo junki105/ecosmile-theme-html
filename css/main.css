@@ -11,24 +11,8 @@
   src: url('../fonts/AOTFShinGoProHeavy.otf');
 }
 @font-face {
-  font-family: 'shingo-bold';
-  src: url('../fonts/AOTFShinGoProBold.otf');
-}
-@font-face {
-  font-family: 'shingo-exlight';
-  src: url('../fonts/AOTFShinGoProExLight.otf');
-}
-@font-face {
-  font-family: 'shingo-light';
-  src: url('../fonts/AOTFShinGoProLight.otf');
-}
-@font-face {
   font-family: 'shingo-medium';
   src: url('../fonts/AOTFShinGoProMedium.otf');
-}
-@font-face {
-  font-family: 'shingo-regular';
-  src: url('../fonts/AOTFShinGoProRegular.otf');
 }
 @font-face {
   font-family: 'myriadpro-bold';
@@ -41,10 +25,6 @@
 @font-face {
   font-family: 'genjyuu-bold';
   src: url('../fonts/Gen Jyuu Gothic Monospace Bold.ttf');
-}
-@font-face {
-  font-family: 'kozuka-bold';
-  src: url('../fonts/KozGoPro-Bold.otf');
 }
 
 @tailwind utilities;
@@ -2896,6 +2876,3 @@ span {
 /* area end */
 
 /* ----- content bottom begin --------- */
-
-
-

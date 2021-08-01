@@ -1,8 +1,9 @@
 module.exports = {
-	purge: {
-		content: [
-		],
-	},
+  // mode: 'jit',
+  //  purge: [
+  //   './*.html'
+  // ],
+
 	darkMode: false, //you can set it to media(uses prefers-color-scheme) or class(better for toggling modes via a button)
 
   theme: {
@@ -25,16 +26,11 @@ module.exports = {
     extend: {
       fontFamily: {
         'shingo-debold': ['shingo-debold'],
-        'shingo-bold': ['shingo-bold'],
-        'shingo-exlight': ['shingo-exlight'],
         'shingo-heavy': ['shingo-heavy'],
-        'shingo-light': ['shingo-light'],
         'shingo-medium': ['shingo-medium'],
-        'shingo-regular': ['shingo-regular'],
         'myriadpro-bold': ['myriadpro-bold'],
         'myriadpro-semibold': ['myriadpro-semibold'],
         'genjyuu-bold': ['genjyuu-bold'],
-        'kozuka-bold': ['kozuka-bold'],
       },
       textColor: {
         'green': '#3d8900',
